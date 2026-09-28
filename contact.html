@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Martex Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">MARTEX <span>REAL ESTATE</span></a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="inspection.html">Book Inspection</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label">GET IN TOUCH</p>
+    <h1>Contact Martex Real Estate</h1>
+    <p>Let's help you find your next property opportunity.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container contact-grid">
+
+    <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <h3>Call / WhatsApp</h3>
+      <p>07039236599</p>
+      <a
+        href="https://wa.me/2347039236599?text=Hello%20Martex%20Real%20Estate%2C%20I%20am%20interested%20in%20one%20of%20your%20properties."
+        class="btn"
+        target="_blank">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <h3>Email</h3>
+      <p>Patmatchuka10@gmail.com</p>
+      <a
+        href="mailto:Patmatchuka10@gmail.com"
+        class="btn">
+        Send Email
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <h3>Our Office</h3>
+      <p>
+        Stop 6 Christ is King Plaza,
+        Black Gate Junction,
+        Okpanam Road
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-form-section">
+  <div class="container form-container">
+
+    <p class="section-label">SEND AN ENQUIRY</p>
+    <h2>Tell Us What You're Looking For</h2>
+
+    <form onsubmit="sendContactMessage(event)">
+
+      <label for="contactName">Full Name</label>
+      <input type="text" id="contactName" required>
+
+      <label for="contactPhone">Phone Number</label>
+      <input type="tel" id="contactPhone" required>
+
+      <label for="contactEmail">Email</label>
+      <input type="email" id="contactEmail">
+
+      <label for="contactMessage">Message</label>
+      <textarea id="contactMessage" rows="6" required
+        placeholder="Tell us which property you are interested in..."></textarea>
+
+      <button type="submit" class="btn form-button">
+        Send Enquiry
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>MARTEX REAL ESTATE</h3>
+      <p>
+        Connecting buyers and investors with quality
+        property opportunities.
+      </p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📞 07039236599</p>
+      <p>✉️ Patmatchuka10@gmail.com</p>
+    </div>
+
+    <div>
+      <h4>Address</h4>
+      <p>
+        Stop 6 Christ is King Plaza,
+        Black Gate Junction,
+        Okpanam Road
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Martex Real Estate. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
