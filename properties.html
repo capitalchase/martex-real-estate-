@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | Martex Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">MARTEX <span>REAL ESTATE</span></a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="inspection.html">Book Inspection</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label">MARTEX REAL ESTATE</p>
+    <h1>Our Properties</h1>
+    <p>Explore houses, duplexes and land currently available for sale.</p>
+  </div>
+</section>
+
+<section class="properties-section">
+  <div class="container">
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="propertySearch"
+        placeholder="Search property or location..."
+        onkeyup="filterProperties()"
+      >
+
+      <select id="propertyTypeFilter" onchange="filterProperties()">
+        <option value="all">All Properties</option>
+        <option value="duplex">Duplexes</option>
+        <option value="land">Land</option>
+      </select>
+    </div>
+
+    <div class="property-grid" id="propertyGrid">
+
+      <article class="property-card searchable-property" data-type="duplex">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/duplex-250m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">DUPLEX</span>
+          <h3>Standard 4 Bedroom Duplex</h3>
+          <p class="location">📍 Asaba, Delta State</p>
+          <p>Swimming pool, CCTV cameras and boys' quarter.</p>
+          <div class="price">₦250,000,000 <small>NET</small></div>
+          <a href="inspection.html?property=Standard%204%20Bedroom%20Duplex" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="land">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/land-30m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">LAND</span>
+          <h3>50 × 100 Ogbeozoma</h3>
+          <p class="location">📍 Okpanam</p>
+          <p>About 3 poles from Asaba-Benin Expressway.</p>
+          <div class="price">₦30,000,000</div>
+          <a href="inspection.html?property=50x100%20Ogbeozoma" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="land">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/land-15m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">LAND</span>
+          <h3>50 × 100 Ogbeobi</h3>
+          <p class="location">📍 Okpanam</p>
+          <p>Located after the Health Center.</p>
+          <div class="price">₦15,000,000 <small>NET</small></div>
+          <a href="inspection.html?property=50x100%20Ogbeobi" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="land">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/land-12m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">LAND</span>
+          <h3>50 × 100 Major Road</h3>
+          <p class="location">📍 Ogbeobi via Obodogwugwu</p>
+          <p>Allocation paper and deed of conveyance.</p>
+          <div class="price">₦12,000,000 <small>ASKING</small></div>
+          <a href="inspection.html?property=50x100%20Major%20Road" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="duplex">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/duplex-230m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">DUPLEX</span>
+          <h3>5 Bedroom Duplex + 3 Bedroom BQ</h3>
+          <p class="location">📍 Nwawolo Market Axis</p>
+          <p>Large duplex with separate 3-bedroom BQ.</p>
+          <div class="price">₦230,000,000 <small>NET</small></div>
+          <a href="inspection.html?property=5%20Bedroom%20Duplex" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="land">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/land-300m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">LAND</span>
+          <h3>85 × 100 Behind Toscana</h3>
+          <p class="location">📍 DBS Road</p>
+          <p>Large property behind Toscana along DBS Road.</p>
+          <div class="price">₦300,000,000 <small>NET</small></div>
+          <a href="inspection.html?property=85x100%20Behind%20Toscana" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+      <article class="property-card searchable-property" data-type="land">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="videos/land-600m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="property-content">
+          <span class="property-type">DEVELOPMENT LAND</span>
+          <h3>100 × 300 Jesus Save</h3>
+          <p class="location">📍 Major Road</p>
+          <p>Suitable for hotel, apartments, school, hospital and other developments.</p>
+          <div class="price">₦600,000,000 <small>ASKING</small></div>
+          <a href="inspection.html?property=100x300%20Jesus%20Save" class="btn property-btn">Book Inspection</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>MARTEX REAL ESTATE</h3>
+      <p>Quality property opportunities for buyers and investors.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="inspection.html">Inspection</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📞 07039236599</p>
+      <p>✉️ Patmatchuka10@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Martex Real Estate. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
