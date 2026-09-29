@@ -12,7 +12,12 @@
 
     <meta
         name="description"
-        content="Book a property inspection with Martex Real Estate."
+        content="Book a property inspection with Martex Real Estate. Schedule a convenient time to view houses, duplexes and land available for sale."
+    >
+
+    <meta
+        name="keywords"
+        content="Martex Real Estate, property inspection, Asaba property inspection, land inspection, house inspection, duplex inspection"
     >
 
     <meta
@@ -20,9 +25,14 @@
         content="#0b1f33"
     >
 
-    <title>Book Inspection | Martex Real Estate</title>
+    <title>
+        Book Inspection | Martex Real Estate
+    </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
@@ -38,7 +48,13 @@
 
     <div class="container nav-container">
 
-        <a href="index.html" class="logo-link">
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo-link"
+        >
 
             <img
                 src="images/logo.png"
@@ -53,11 +69,1185 @@
         </a>
 
 
+        <!-- MOBILE MENU BUTTON -->
+
         <button
             class="menu-toggle"
             id="menuToggle"
             type="button"
             aria-label="Open navigation menu"
+            aria-expanded="false"
         >
             ☰
-        </
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+            class="main-nav"
+            id="mainNav"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a
+                href="inspection.html"
+                class="active"
+            >
+                Book Inspection
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="https://wa.me/2347039236599"
+                target="_blank"
+                rel="noopener"
+                class="nav-whatsapp"
+            >
+                WhatsApp
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HERO
+===================================================== -->
+
+<section class="page-hero">
+
+    <div class="container page-hero-content">
+
+        <span class="section-label">
+            MARTEX REAL ESTATE
+        </span>
+
+        <h1>
+            Book a Property Inspection
+        </h1>
+
+        <p>
+            Found a property you like?
+            Schedule an inspection and take the next step
+            toward finding the right property for you.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INSPECTION SECTION
+===================================================== -->
+
+<section class="inspection-main-section">
+
+    <div class="container inspection-layout">
+
+
+        <!-- =================================================
+             LEFT INFORMATION PANEL
+        ================================================== -->
+
+        <div class="inspection-info">
+
+
+            <span class="section-label">
+                PROPERTY VIEWING
+            </span>
+
+
+            <h2>
+                See the Property for Yourself
+            </h2>
+
+
+            <p>
+                Online photos and videos can help you discover
+                a property, but an in-person inspection allows
+                you to experience the location and property
+                for yourself.
+            </p>
+
+
+            <div class="inspection-feature">
+
+
+                <div class="inspection-feature-icon">
+                    🏠
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Select a Property
+                    </h3>
+
+                    <p>
+                        Choose the property you are interested
+                        in from the inspection form.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="inspection-feature">
+
+
+                <div class="inspection-feature-icon">
+                    📅
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Choose Your Preferred Date
+                    </h3>
+
+                    <p>
+                        Tell us the date that is convenient
+                        for your inspection request.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="inspection-feature">
+
+
+                <div class="inspection-feature-icon">
+                    🕐
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Select a Convenient Time
+                    </h3>
+
+                    <p>
+                        Provide your preferred inspection time
+                        and our team will contact you to confirm
+                        the appointment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="inspection-feature">
+
+
+                <div class="inspection-feature-icon">
+                    🤝
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Receive Confirmation
+                    </h3>
+
+                    <p>
+                        Your request will be sent to Martex
+                        Real Estate through WhatsApp for
+                        confirmation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIRECT WHATSAPP -->
+
+            <div class="inspection-direct-contact">
+
+                <p>
+                    Prefer to speak with us directly?
+                </p>
+
+                <a
+                    href="https://wa.me/2347039236599"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-outline"
+                >
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             INSPECTION FORM
+        ================================================== -->
+
+        <div class="inspection-form-card">
+
+
+            <div class="form-header">
+
+                <span class="section-label">
+                    INSPECTION REQUEST
+                </span>
+
+                <h2>
+                    Schedule Your Visit
+                </h2>
+
+                <p>
+                    Complete the form below and submit
+                    your inspection request.
+                </p>
+
+            </div>
+
+
+
+            <form
+                id="inspectionForm"
+            >
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="inspectionName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="inspectionName"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="inspectionPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="inspectionPhone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="inspectionEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="inspectionEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                    >
+
+                </div>
+
+
+
+                <!-- PROPERTY -->
+
+                <div class="form-group">
+
+                    <label for="inspectionProperty">
+                        Property of Interest
+                    </label>
+
+                    <select
+                        id="inspectionProperty"
+                        name="property"
+                        required
+                    >
+
+                        <option value="">
+                            Select a property
+                        </option>
+
+
+                        <option value="₦250M Standard 4 Bedroom Duplex">
+                            ₦250M — Standard 4 Bedroom Duplex
+                        </option>
+
+
+                        <option value="₦30M 50x100 Ogbeozoma Land">
+                            ₦30M — 50 × 100 Ogbeozoma Land
+                        </option>
+
+
+                        <option value="₦15M 50x100 Ogbeobi Land">
+                            ₦15M — 50 × 100 Ogbeobi Land
+                        </option>
+
+
+                        <option value="₦12M 50x100 Major Road Land">
+                            ₦12M — 50 × 100 Major Road Land
+                        </option>
+
+
+                        <option value="₦230M 5 Bedroom Duplex + 3 Bedroom BQ">
+                            ₦230M — 5 Bedroom Duplex + 3 Bedroom BQ
+                        </option>
+
+
+                        <option value="₦300M 85x100 Land Behind Toscana">
+                            ₦300M — 85 × 100 Land Behind Toscana
+                        </option>
+
+
+                        <option value="₦600M 100x300 Development Land">
+                            ₦600M — 100 × 300 Development Land
+                        </option>
+
+
+                        <option value="Other Property">
+                            Other Property
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- DATE -->
+
+                <div class="form-group">
+
+                    <label for="inspectionDate">
+                        Preferred Inspection Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="inspectionDate"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- TIME -->
+
+                <div class="form-group">
+
+                    <label for="inspectionTime">
+                        Preferred Inspection Time
+                    </label>
+
+                    <select
+                        id="inspectionTime"
+                        name="time"
+                        required
+                    >
+
+                        <option value="">
+                            Select preferred time
+                        </option>
+
+                        <option value="9:00 AM">
+                            9:00 AM
+                        </option>
+
+                        <option value="10:00 AM">
+                            10:00 AM
+                        </option>
+
+                        <option value="11:00 AM">
+                            11:00 AM
+                        </option>
+
+                        <option value="12:00 PM">
+                            12:00 PM
+                        </option>
+
+                        <option value="1:00 PM">
+                            1:00 PM
+                        </option>
+
+                        <option value="2:00 PM">
+                            2:00 PM
+                        </option>
+
+                        <option value="3:00 PM">
+                            3:00 PM
+                        </option>
+
+                        <option value="4:00 PM">
+                            4:00 PM
+                        </option>
+
+                        <option value="5:00 PM">
+                            5:00 PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="inspectionMessage">
+                        Additional Message
+                    </label>
+
+                    <textarea
+                        id="inspectionMessage"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us anything else we should know..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-submit"
+                >
+                    Request Inspection
+                </button>
+
+
+                <p
+                    id="inspectionMessageStatus"
+                    class="form-message"
+                ></p>
+
+
+                <p class="form-note">
+                    Your request will open WhatsApp so our team
+                    can confirm the inspection details with you.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHAT TO EXPECT
+===================================================== -->
+
+<section class="why-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                INSPECTION PROCESS
+            </span>
+
+            <h2>
+                What Happens Next?
+            </h2>
+
+            <p>
+                A simple process from your inspection request
+                to your property visit.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefits-grid">
+
+
+            <!-- STEP 1 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    1
+                </div>
+
+                <h3>
+                    Submit Your Request
+                </h3>
+
+                <p>
+                    Select the property, date and preferred
+                    inspection time.
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    2
+                </div>
+
+                <h3>
+                    We Contact You
+                </h3>
+
+                <p>
+                    Our team receives your request and contacts
+                    you to confirm the details.
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    3
+                </div>
+
+                <h3>
+                    Inspection Appointment
+                </h3>
+
+                <p>
+                    Visit the selected property at the
+                    confirmed appointment time.
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    4
+                </div>
+
+                <h3>
+                    Discuss Your Options
+                </h3>
+
+                <p>
+                    After viewing the property, speak with
+                    our team about your next steps.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHATSAPP CTA
+===================================================== -->
+
+<section class="inspection-cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+
+            <div>
+
+                <span class="section-label">
+                    NEED HELP?
+                </span>
+
+                <h2>
+                    Talk to Martex Real Estate
+                </h2>
+
+                <p>
+                    If you have questions before booking,
+                    contact us directly on WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="cta-buttons">
+
+                <a
+                    href="https://wa.me/2347039236599"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                >
+                    Chat on WhatsApp
+                </a>
+
+
+                <a
+                    href="properties.html"
+                    class="btn btn-outline"
+                >
+                    View Properties
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- FOOTER BRAND -->
+
+        <div class="footer-brand">
+
+            <img
+                src="images/logo.png"
+                alt="Martex Real Estate Logo"
+                class="footer-logo"
+            >
+
+            <h3>
+                Martex Real Estate
+            </h3>
+
+            <p>
+                Houses, land and property opportunities
+                for buyers and investors.
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="inspection.html">
+                Book Inspection
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-links">
+
+            <h4>
+                Contact
+            </h4>
+
+            <a href="tel:+2347039236599">
+                0703 923 6599
+            </a>
+
+            <a href="mailto:Patmatchuka10@gmail.com">
+                Patmatchuka10@gmail.com
+            </a>
+
+            <a
+                href="https://wa.me/2347039236599"
+                target="_blank"
+                rel="noopener"
+            >
+                WhatsApp
+            </a>
+
+        </div>
+
+
+
+        <!-- OFFICE -->
+
+        <div class="footer-links">
+
+            <h4>
+                Office
+            </h4>
+
+            <p>
+                Stop 6 Christ Is King Plaza
+            </p>
+
+            <p>
+                Black Gate Junction
+            </p>
+
+            <p>
+                Okpanam Road
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+
+                ©
+                <span id="currentYear"></span>
+
+                Martex Real Estate.
+
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP BUTTON
+===================================================== -->
+
+<a
+    href="https://wa.me/2347039236599"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Martex Real Estate on WhatsApp"
+>
+
+    <span>
+        💬
+    </span>
+
+</a>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mainNav =
+    document.getElementById("mainNav");
+
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            const isOpen =
+                mainNav.classList.toggle("show");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
+
+        }
+    );
+
+
+    const navigationLinks =
+        mainNav.querySelectorAll("a");
+
+
+    navigationLinks.forEach(
+        function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    mainNav.classList.remove("show");
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
+
+const currentYear =
+    document.getElementById("currentYear");
+
+
+if (currentYear) {
+
+    currentYear.textContent =
+        new Date().getFullYear();
+
+}
+
+
+
+/* =====================================================
+   PREVENT PAST INSPECTION DATES
+===================================================== */
+
+const inspectionDate =
+    document.getElementById("inspectionDate");
+
+
+if (inspectionDate) {
+
+    const today =
+        new Date();
+
+
+    const year =
+        today.getFullYear();
+
+
+    const month =
+        String(
+            today.getMonth() + 1
+        ).padStart(2, "0");
+
+
+    const day =
+        String(
+            today.getDate()
+        ).padStart(2, "0");
+
+
+    inspectionDate.min =
+        `${year}-${month}-${day}`;
+
+}
+
+
+
+/* =====================================================
+   INSPECTION FORM
+===================================================== */
+
+const inspectionForm =
+    document.getElementById("inspectionForm");
+
+
+if (inspectionForm) {
+
+    inspectionForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document
+                .getElementById("inspectionName")
+                .value
+                .trim();
+
+
+            const phone =
+                document
+                .getElementById("inspectionPhone")
+                .value
+                .trim();
+
+
+            const email =
+                document
+                .getElementById("inspectionEmail")
+                .value
+                .trim();
+
+
+            const property =
+                document
+                .getElementById("inspectionProperty")
+                .value;
+
+
+            const date =
+                document
+                .getElementById("inspectionDate")
+                .value;
+
+
+            const time =
+                document
+                .getElementById("inspectionTime")
+                .value;
+
+
+            const message =
+                document
+                .getElementById("inspectionMessage")
+                .value
+                .trim();
+
+
+
+            /*
+             * Convert the selected date into
+             * a more readable format.
+             */
+
+            let formattedDate =
+                date;
+
+
+            if (date) {
+
+                const dateObject =
+                    new Date(
+                        date + "T00:00:00"
+                    );
+
+
+                formattedDate =
+                    dateObject.toLocaleDateString(
+                        "en-NG",
+                        {
+                            weekday: "long",
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric"
+                        }
+                    );
+
+            }
+
+
+
+            /*
+             * Create WhatsApp message.
+             */
+
+            const whatsappText =
+
+                "Hello Martex Real Estate." +
+
+                "\n\n" +
+
+                "*PROPERTY INSPECTION REQUEST*" +
+
+                "\n\n" +
+
+                "*Name:* " +
+                name +
+
+                "\n" +
+
+                "*Phone:* " +
+                phone +
+
+                "\n" +
+
+                "*Email:* " +
+                (email || "Not provided") +
+
+                "\n" +
+
+                "*Property:* " +
+                property +
+
+                "\n" +
+
+                "*Preferred Date:* " +
+                formattedDate +
+
+                "\n" +
+
+                "*Preferred Time:* " +
+                time +
+
+                "\n\n" +
+
+                "*Additional Message:* " +
+
+                (message || "No additional message.");
+
+
+
+            /*
+             * Encode the message for WhatsApp.
+             */
+
+            const whatsappURL =
+                "https://wa.me/2347039236599?text=" +
+                encodeURIComponent(
+                    whatsappText
+                );
+
+
+
+            /*
+             * Show a small confirmation
+             * before opening WhatsApp.
+             */
+
+            const status =
+                document.getElementById(
+                    "inspectionMessageStatus"
+                );
+
+
+            if (status) {
+
+                status.textContent =
+                    "Opening WhatsApp with your inspection request...";
+
+            }
+
+
+
+            /*
+             * Open WhatsApp.
+             */
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+        }
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
