@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Properties | Martex Real Estate</title>
 
-    <meta name="description"
-          content="Explore houses, duplexes, land and investment property opportunities available through Martex Real Estate.">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
+<header>
 
-<header class="site-header">
+    <div class="navbar">
 
-    <div class="header-container">
-
-        <a href="index.html" class="logo-area">
-            <img src="images/logo.png" alt="Martex Real Estate Logo">
-            <span>Martex Real Estate</span>
-        </a>
-
-        <nav class="main-nav" id="mainNav">
+        <div class="logo">
 
             <a href="index.html">
-                Home
+                <img src="images/logo.png" alt="Martex Real Estate Logo">
             </a>
 
-            <a href="properties.html" class="active">
+            <div class="brand-name">
+                Martex Real Estate
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">
                 Properties
             </a>
 
@@ -47,179 +46,76 @@
 
         </nav>
 
-        <a
-            href="https://wa.me/2347039236599"
-            class="header-whatsapp"
-            target="_blank"
-        >
-            WhatsApp
-        </a>
-
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation menu"
-        >
-            ☰
-        </button>
-
     </div>
 
 </header>
 
 
-<!-- =========================
-     PAGE HERO
-========================= -->
+<main>
 
-<section class="property-page-hero">
+<section>
 
     <div class="section-container">
 
-        <p class="section-label">
-            MARTEX REAL ESTATE
-        </p>
+        <div class="section-title">
 
-        <h1>
-            Explore Our Properties
-        </h1>
+            <h2>Available Properties</h2>
 
-        <p>
-            Browse available houses, duplexes, land and development
-            opportunities. Watch the property videos and schedule an
-            inspection when you find one you're interested in.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     PROPERTY FILTER
-========================= -->
-
-<section class="property-filter-section">
-
-    <div class="section-container">
-
-        <div class="property-filter">
-
-            <button
-                class="filter-btn active"
-                data-filter="all"
-            >
-                All Properties
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="house"
-            >
-                Houses & Duplexes
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="land"
-            >
-                Land
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="investment"
-            >
-                Investment
-            </button>
+            <p>
+                Explore our available houses, duplexes and land
+                opportunities in and around Asaba, Delta State.
+            </p>
 
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- =========================
-     PROPERTIES
-========================= -->
-
-<section class="properties-section">
-
-    <div class="section-container">
 
         <div class="properties-grid">
 
 
-            <!-- =================================================
-                 PROPERTY 1
-            ================================================== -->
+            <!-- PROPERTY 1 -->
 
-            <article
-                class="property-card"
-                data-category="house investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/duplex-250m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/duplex-250m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                    <span class="property-badge">
-                        FEATURED
-                    </span>
+                <div class="property-content">
 
-                </div>
-
-                <div class="property-card-body">
-
-                    <span class="property-type">
-                        HOUSE
-                    </span>
-
-                    <h2>
+                    <h3>
                         Standard 4 Bedroom Duplex
-                    </h2>
+                    </h3>
 
-                    <p class="property-location">
-                        📍 Asaba, Delta State
-                    </p>
-
-                    <p>
-                        Standard 4 bedroom duplex with swimming pool,
-                        CCTV cameras and boys' quarter.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>4 Bedrooms</span>
-                        <span>Swimming Pool</span>
-                        <span>CCTV</span>
-                        <span>BQ</span>
-
+                    <div class="property-location">
+                        My Dream Studio Area
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦250,000,000
+                    </div>
 
-                        <strong>
-                            ₦250,000,000 Net
-                        </strong>
+                    <p class="property-description">
+                        Standard 4-bedroom duplex featuring a
+                        swimming pool, CCTV cameras, boys' quarter
+                        and 33-line power connection.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=Standard%204%20Bedroom%20Duplex"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -230,70 +126,49 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 2
-            ================================================== -->
+            <!-- PROPERTY 2 -->
 
-            <article
-                class="property-card"
-                data-category="land investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/land-30m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/land-30m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
-
-                    <span class="property-type">
-                        LAND
-                    </span>
-
-                    <h2>
+                    <h3>
                         50 × 100 Land
-                    </h2>
+                    </h3>
 
-                    <p class="property-location">
-                        📍 Ogbeozoma, Okpanam
-                    </p>
-
-                    <p>
-                        Strategically located approximately three poles
-                        from the Asaba–Benin Expressway.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>50 × 100</span>
-                        <span>Okpanam</span>
-                        <span>Strategic Location</span>
-
+                    <div class="property-location">
+                        Ogbeozoma, Okpanam
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦30,000,000
+                    </div>
 
-                        <strong>
-                            ₦30,000,000
-                        </strong>
+                    <p class="property-description">
+                        Located approximately 3 poles from the
+                        Asaba-Benin Expressway.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=50x100%20Ogbeozoma%20Okpanam"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -304,70 +179,50 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 3
-            ================================================== -->
+            <!-- PROPERTY 3 -->
 
-            <article
-                class="property-card"
-                data-category="land"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/land-15m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/land-15m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
-
-                    <span class="property-type">
-                        LAND
-                    </span>
-
-                    <h2>
+                    <h3>
                         50 × 100 Land
-                    </h2>
+                    </h3>
 
-                    <p class="property-location">
-                        📍 Ogbeobi, Okpanam
-                    </p>
-
-                    <p>
-                        Located after the Health Center in Ogbeobi,
-                        Okpanam.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>50 × 100</span>
-                        <span>Okpanam</span>
-                        <span>Cash & Carry</span>
-
+                    <div class="property-location">
+                        Ogbeobi, Okpanam
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦15,000,000
+                    </div>
 
-                        <strong>
-                            ₦15,000,000 Net
-                        </strong>
+                    <p class="property-description">
+                        Located after the Health Center.
+                        Net price with no room for negotiation.
+                        Cash and carry.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=50x100%20Ogbeobi%20Okpanam"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -378,72 +233,50 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 4
-            ================================================== -->
+            <!-- PROPERTY 4 -->
 
-            <article
-                class="property-card"
-                data-category="land investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/land-12m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/land-12m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
-
-                    <span class="property-type">
-                        LAND
-                    </span>
-
-                    <h2>
+                    <h3>
                         50 × 100 Land
-                    </h2>
+                    </h3>
 
-                    <p class="property-location">
-                        📍 Major Road, Ogbeobi Okpanam
-                    </p>
-
-                    <p>
-                        Located on the major road via Obodogwugwu.
-                        Available with allocation paper and deed of
-                        conveyance.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>50 × 100</span>
-                        <span>Major Road</span>
-                        <span>Allocation Paper</span>
-                        <span>Deed of Conveyance</span>
-
+                    <div class="property-location">
+                        Ogbeobi, Okpanam via Obodogwugwu
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦12,000,000
+                    </div>
 
-                        <strong>
-                            ₦12,000,000 Asking
-                        </strong>
+                    <p class="property-description">
+                        Located on the major road.
+                        Documentation includes allocation paper
+                        and deed of conveyance.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=50x100%20Major%20Road%20Ogbeobi"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -454,70 +287,49 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 5
-            ================================================== -->
+            <!-- PROPERTY 5 -->
 
-            <article
-                class="property-card"
-                data-category="house investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/duplex-230m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/duplex-230m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
+                    <h3>
+                        5 Bedroom Duplex
+                    </h3>
 
-                    <span class="property-type">
-                        HOUSE
-                    </span>
-
-                    <h2>
-                        5 Bedroom Duplex + 3 Bedroom BQ
-                    </h2>
-
-                    <p class="property-location">
-                        📍 Nwawolo Market Axis
-                    </p>
-
-                    <p>
-                        Spacious residential property with a separate
-                        3 bedroom boys' quarter.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>5 Bedrooms</span>
-                        <span>3 Bedroom BQ</span>
-                        <span>Residential</span>
-
+                    <div class="property-location">
+                        Nwawolo Market Axis
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦230,000,000
+                    </div>
 
-                        <strong>
-                            ₦230,000,000 Net
-                        </strong>
+                    <p class="property-description">
+                        Spacious 5-bedroom duplex with
+                        a 3-bedroom boys' quarter.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=5%20Bedroom%20Duplex%20Nwawolo%20Market"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -528,70 +340,49 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 6
-            ================================================== -->
+            <!-- PROPERTY 6 -->
 
-            <article
-                class="property-card"
-                data-category="land investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/land-300m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/land-300m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
-
-                    <span class="property-type">
-                        LAND
-                    </span>
-
-                    <h2>
+                    <h3>
                         85 × 100 Land
-                    </h2>
+                    </h3>
 
-                    <p class="property-location">
-                        📍 Behind Toscana, DBS Road
-                    </p>
-
-                    <p>
-                        Large land parcel located behind Toscana along
-                        the DBS Road axis.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>85 × 100</span>
-                        <span>DBS Road</span>
-                        <span>Development</span>
-
+                    <div class="property-location">
+                        Behind Toscana, DBS Road
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦300,000,000
+                    </div>
 
-                        <strong>
-                            ₦300,000,000 Net
-                        </strong>
+                    <p class="property-description">
+                        Premium land opportunity in a strategic
+                        location suitable for major development.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=85x100%20Behind%20Toscana%20DBS%20Road"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -602,73 +393,50 @@
             </article>
 
 
-            <!-- =================================================
-                 PROPERTY 7
-            ================================================== -->
+            <!-- PROPERTY 7 -->
 
-            <article
-                class="property-card"
-                data-category="land investment"
-            >
+            <article class="property-card">
 
-                <div class="property-video">
+                <video
+                    class="property-video"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    muted>
 
-                    <video
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source
-                            src="videos/land-600m.mp4"
-                            type="video/mp4"
-                        >
+                    <source
+                        src="videos/land-600m.mp4"
+                        type="video/mp4">
 
-                        Your browser does not support video playback.
+                    Your browser does not support video playback.
 
-                    </video>
+                </video>
 
-                </div>
+                <div class="property-content">
 
-                <div class="property-card-body">
+                    <h3>
+                        100 × 300 Land
+                    </h3>
 
-                    <span class="property-type">
-                        DEVELOPMENT LAND
-                    </span>
-
-                    <h2>
-                        100 × 300 Development Land
-                    </h2>
-
-                    <p class="property-location">
-                        📍 Jesus Save Major Road
-                    </p>
-
-                    <p>
-                        Large development parcel just after Presidential
-                        Villa. Suitable for major development projects.
-                    </p>
-
-                    <div class="property-card-features">
-
-                        <span>100 × 300</span>
-                        <span>Major Road</span>
-                        <span>Hotel</span>
-                        <span>Apartments</span>
-                        <span>School</span>
-                        <span>Hospital</span>
-
+                    <div class="property-location">
+                        Jesus Save Major Road
                     </div>
 
-                    <div class="property-card-bottom">
+                    <div class="property-price">
+                        ₦600,000,000
+                    </div>
 
-                        <strong>
-                            ₦600,000,000 Asking
-                        </strong>
+                    <p class="property-description">
+                        Located just after Presidential Villa.
+                        Suitable for hotel, apartments, school,
+                        hospital and other major developments.
+                    </p>
+
+                    <div class="property-buttons">
 
                         <a
-                            href="inspection.html?property=100x300%20Jesus%20Save%20Major%20Road"
-                            class="btn btn-primary"
-                        >
+                            href="inspection.html"
+                            class="inspect-btn">
                             Book Inspection
                         </a>
 
@@ -677,6 +445,7 @@
                 </div>
 
             </article>
+
 
         </div>
 
@@ -685,158 +454,110 @@
 </section>
 
 
-<!-- =========================
-     INSPECTION CTA
-========================= -->
-
-<section class="inspection-cta">
+<section class="cta">
 
     <div class="section-container">
 
-        <div class="inspection-box">
+        <h2>
+            Found a Property You Like?
+        </h2>
 
-            <div>
+        <p>
+            Book an inspection and arrange a convenient time
+            to view the property in person.
+        </p>
 
-                <p class="section-label">
-                    FOUND SOMETHING YOU LIKE?
-                </p>
+        <a
+            href="inspection.html"
+            class="btn btn-primary">
+            Book an Inspection
+        </a>
 
-                <h2>
-                    Schedule a Property Inspection
-                </h2>
+    </div>
 
-                <p>
-                    Take the next step and arrange a closer look
-                    at the property you're interested in.
-                </p>
+</section>
 
-            </div>
+</main>
 
-            <a
-                href="inspection.html"
-                class="btn btn-light"
-            >
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Martex Real Estate
+            </h3>
+
+            <p>
+                Connecting buyers and investors with
+                residential, land and property opportunities
+                in strategic locations.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="inspection.html">
                 Book Inspection
+            </a>
+
+            <a href="contact.html">
+                Contact
             </a>
 
         </div>
 
-    </div>
 
-</section>
+        <div>
 
-
-<!-- =========================
-     WHATSAPP
-========================= -->
-
-<a
-    href="https://wa.me/2347039236599"
-    class="floating-whatsapp"
-    target="_blank"
-    aria-label="Chat with Martex Real Estate on WhatsApp"
->
-    <span>WhatsApp</span>
-</a>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="site-footer">
-
-    <div class="section-container">
-
-        <div class="footer-grid">
-
-            <div class="footer-brand">
-
-                <img
-                    src="images/logo.png"
-                    alt="Martex Real Estate Logo"
-                >
-
-                <h3>
-                    Martex Real Estate
-                </h3>
-
-                <p>
-                    Quality homes, land and property opportunities.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h4>
-                    Quick Links
-                </h4>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="properties.html">
-                    Properties
-                </a>
-
-                <a href="inspection.html">
-                    Book Inspection
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </div>
-
-
-            <div class="footer-contact">
-
-                <h4>
-                    Contact
-                </h4>
-
-                <a
-                    href="https://wa.me/2347039236599"
-                    target="_blank"
-                >
-                    07039236599
-                </a>
-
-                <a
-                    href="mailto:Patmatchuka10@gmail.com"
-                >
-                    Patmatchuka10@gmail.com
-                </a>
-
-                <p>
-                    Stop 6 Christ is King Plaza,<br>
-                    Black Gate Junction,<br>
-                    Okpanam Road
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
+            <h3>
+                Contact
+            </h3>
 
             <p>
-                © 2026 Martex Real Estate. All Rights Reserved.
+                WhatsApp: 07039236599
+            </p>
+
+            <p>
+                Email: Patmatchuka10@gmail.com
+            </p>
+
+            <p>
+                Stop 6 Christ is King Plaza,
+                Black Gate Junction,
+                Okpanam Road
             </p>
 
         </div>
 
     </div>
 
+
+    <div class="footer-bottom">
+
+        © 2026 Martex Real Estate.
+        All Rights Reserved.
+
+    </div>
+
 </footer>
 
-
-<script src="script.js"></script>
-
 </body>
+
 </html>
