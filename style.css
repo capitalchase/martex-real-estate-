@@ -1,6 +1,6 @@
 /* =========================================
    MARTEX REAL ESTATE
-   Professional Real Estate Website
+   PROFESSIONAL RESPONSIVE DESIGN
 ========================================= */
 
 * {
@@ -10,12 +10,16 @@
 }
 
 html {
+    width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f8fa;
+    background: #ffffff;
     color: #17202a;
     line-height: 1.6;
 }
@@ -27,26 +31,26 @@ body {
 header {
     width: 100%;
     background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
     z-index: 1000;
 }
 
 .navbar {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
-    min-height: 78px;
-    padding: 10px 25px;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 8px 24px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
 }
 
-/* IMPORTANT: keeps logo small */
+/* =========================================
+   LOGO
+========================================= */
 
 .logo {
     display: flex;
@@ -54,39 +58,56 @@ header {
     flex-shrink: 0;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .logo img {
-    width: 58px;
-    height: 58px;
-    max-width: 58px;
-    max-height: 58px;
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+
     object-fit: contain;
     display: block;
 }
 
 .brand-name {
     margin-left: 10px;
-    font-size: 20px;
+
+    font-size: 18px;
     font-weight: 800;
     color: #102a43;
+
     white-space: nowrap;
 }
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 22px;
 }
 
 nav a {
-    text-decoration: none;
     color: #243b53;
-    font-size: 15px;
+    text-decoration: none;
+
+    font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+
+    white-space: nowrap;
+
+    transition: color 0.25s ease;
 }
 
 nav a:hover {
-    color: #c79a3b;
+    color: #b8862b;
 }
 
 /* =========================================
@@ -94,57 +115,74 @@ nav a:hover {
 ========================================= */
 
 .hero {
-    min-height: 650px;
+    width: 100%;
+    min-height: 540px;
+
     background:
         linear-gradient(
-            rgba(5, 20, 35, 0.65),
-            rgba(5, 20, 35, 0.65)
-        ),
-        url("images/logo.png");
-
-    background-size: cover;
-    background-position: center;
+            135deg,
+            #102a43,
+            #1f4e79
+        );
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-    padding: 80px 20px;
+
+    padding: 55px 20px;
 }
 
 .hero-content {
+    width: 100%;
     max-width: 850px;
-    color: white;
+    margin: 0 auto;
+    color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 55px;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.08;
+
     font-weight: 800;
+
+    margin-bottom: 18px;
 }
 
 .hero p {
-    font-size: 20px;
     max-width: 700px;
-    margin: 0 auto 30px;
-    color: #f0f4f8;
+    margin: 0 auto 28px;
+
+    font-size: clamp(16px, 2vw, 20px);
+
+    color: #edf2f7;
 }
+
+/* =========================================
+   BUTTONS
+========================================= */
 
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+
+    padding: 13px 24px;
+
     border-radius: 6px;
+
     text-decoration: none;
+
+    font-size: 14px;
     font-weight: 700;
-    margin: 5px;
-    transition: 0.3s;
+
+    margin: 4px;
+
+    transition: all 0.25s ease;
 }
 
 .btn-primary {
     background: #c79a3b;
-    color: white;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -153,113 +191,128 @@ nav a:hover {
 }
 
 .btn-light {
-    background: white;
+    background: #ffffff;
     color: #102a43;
 }
 
 .btn-light:hover {
     background: #edf2f7;
+    transform: translateY(-2px);
 }
 
 /* =========================================
-   GENERAL SECTIONS
+   SECTIONS
 ========================================= */
 
 section {
-    padding: 80px 20px;
+    width: 100%;
+    padding: 70px 20px;
 }
 
 .section-container {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .section-title h2 {
-    font-size: 38px;
     color: #102a43;
+    font-size: clamp(28px, 4vw, 38px);
     margin-bottom: 10px;
 }
 
 .section-title p {
-    color: #627d98;
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
+    color: #627d98;
 }
 
 /* =========================================
-   PROPERTY CARDS
+   PROPERTY GRID
 ========================================= */
 
 .properties-grid {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
 }
 
 .property-card {
-    background: white;
-    border-radius: 12px;
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
     overflow: hidden;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-
-    transition: 0.3s;
+    box-shadow:
+        0 6px 25px rgba(0, 0, 0, 0.08);
 }
 
 .property-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
 }
 
 /* =========================================
-   VIDEO
+   PROPERTY VIDEO
 ========================================= */
 
 .property-video {
-    width: 100%;
-    height: 250px;
-
     display: block;
 
-    object-fit: cover;
+    width: 100%;
+    height: 240px;
+
     background: #111827;
+
+    object-fit: cover;
 }
 
+/* =========================================
+   PROPERTY INFORMATION
+========================================= */
+
 .property-content {
-    padding: 22px;
+    padding: 20px;
 }
 
 .property-content h3 {
     color: #102a43;
-    font-size: 21px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .property-location {
     color: #627d98;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .property-price {
     color: #b07d20;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .property-description {
     color: #52606d;
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .property-buttons {
@@ -270,8 +323,9 @@ section {
 
 .property-buttons a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 9px 13px;
     border-radius: 5px;
+
     font-size: 13px;
     font-weight: 700;
 }
@@ -291,32 +345,41 @@ section {
 ========================================= */
 
 .features {
-    background: #ffffff;
+    background: #f7f9fb;
 }
 
 .features-grid {
+    width: 100%;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
 }
 
 .feature {
-    padding: 30px;
-    text-align: center;
-    background: #f8fafc;
+    background: #ffffff;
+
+    padding: 28px 20px;
+
     border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .feature h3 {
-    margin-bottom: 10px;
     color: #102a43;
+    margin-bottom: 8px;
 }
 
 .feature p {
     color: #627d98;
+    font-size: 14px;
 }
 
 /* =========================================
@@ -325,18 +388,20 @@ section {
 
 .cta {
     background: #102a43;
-    color: white;
+    color: #ffffff;
+
     text-align: center;
 }
 
 .cta h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 12px;
 }
 
 .cta p {
     max-width: 700px;
-    margin: 0 auto 25px;
+    margin: 0 auto 22px;
+
     color: #d9e2ec;
 }
 
@@ -345,23 +410,31 @@ section {
 ========================================= */
 
 .form-container {
+    width: 100%;
     max-width: 750px;
-    margin: auto;
-    background: white;
-    padding: 35px;
-    border-radius: 12px;
+    margin: 0 auto;
 
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+
+    padding: 32px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 7px;
+
+    margin-bottom: 6px;
+
     font-weight: 700;
+
     color: #243b53;
 }
 
@@ -369,12 +442,15 @@ section {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 13px 14px;
+
+    padding: 12px 13px;
 
     border: 1px solid #d9e2ec;
-    border-radius: 6px;
+
+    border-radius: 5px;
 
     font-family: inherit;
+
     font-size: 15px;
 
     outline: none;
@@ -387,27 +463,25 @@ section {
 }
 
 .form-group textarea {
-    min-height: 130px;
+    min-height: 120px;
     resize: vertical;
 }
 
 .submit-btn {
     width: 100%;
+
+    padding: 13px;
+
     border: none;
-    padding: 14px;
+    border-radius: 5px;
 
     background: #c79a3b;
-    color: white;
+    color: #ffffff;
 
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
 
-    border-radius: 6px;
     cursor: pointer;
-}
-
-.submit-btn:hover {
-    background: #a97d28;
 }
 
 /* =========================================
@@ -415,22 +489,28 @@ section {
 ========================================= */
 
 footer {
+    width: 100%;
+
     background: #071521;
-    color: white;
-    padding: 45px 20px 20px;
+    color: #ffffff;
+
+    padding: 40px 20px 20px;
 }
 
 .footer-container {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 35px;
 }
 
 footer h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 footer p,
@@ -441,80 +521,39 @@ footer a {
 
 footer a {
     display: block;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
 
-footer a:hover {
-    color: #c79a3b;
+    text-decoration: none;
+
+    margin-bottom: 7px;
 }
 
 .footer-bottom {
+    width: 100%;
     max-width: 1200px;
-    margin: 35px auto 0;
-    padding-top: 20px;
 
-    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 30px auto 0;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.12);
 
     text-align: center;
+
     color: #829ab1;
+
     font-size: 13px;
 }
 
 /* =========================================
-   MOBILE
+   TABLET — iPAD
 ========================================= */
 
 @media (max-width: 900px) {
 
     .navbar {
-        padding: 10px 16px;
-    }
-
-    .brand-name {
-        font-size: 17px;
-    }
-
-    .logo img {
-        width: 48px;
-        height: 48px;
-        max-width: 48px;
-        max-height: 48px;
-    }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    .hero {
-        min-height: 550px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .properties-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .navbar {
-        min-height: 70px;
+        min-height: 68px;
+        padding: 7px 18px;
     }
 
     .logo img {
@@ -525,7 +564,62 @@ footer a:hover {
     }
 
     .brand-name {
-        font-size: 15px;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 20px;
+    }
+
+    .properties-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .features-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================================
+   ANDROID / SMALL PHONES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        min-height: 62px;
+        padding: 6px 12px;
+
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 36px;
+        height: 36px;
+        max-width: 36px;
+        max-height: 36px;
+    }
+
+    .brand-name {
+        font-size: 14px;
+        margin-left: 6px;
     }
 
     nav {
@@ -533,12 +627,14 @@ footer a:hover {
     }
 
     nav a {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .hero {
-        min-height: 500px;
-        padding: 60px 15px;
+        min-height: 470px;
+
+        padding:
+            45px 15px;
     }
 
     .hero h1 {
@@ -546,15 +642,16 @@ footer a:hover {
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 13px;
     }
 
     section {
-        padding: 60px 15px;
-    }
-
-    .section-title h2 {
-        font-size: 30px;
+        padding: 55px 15px;
     }
 
     .properties-grid {
@@ -566,7 +663,7 @@ footer a:hover {
     }
 
     .property-video {
-        height: 230px;
+        height: 225px;
     }
 
     .footer-container {
@@ -574,6 +671,45 @@ footer a:hover {
     }
 
     .form-container {
-        padding: 22px;
+        padding: 22px 18px;
+    }
+}
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+
+    .navbar {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .logo img {
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+    .brand-name {
+        font-size: 12px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
     }
 }
