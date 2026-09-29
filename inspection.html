@@ -1,123 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Inspection | Martex Real Estate</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Property Inspection | Martex Real Estate</title>
+
+    <meta name="description"
+          content="Book a property inspection with Martex Real Estate. Select a property and preferred inspection date.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container nav-container">
-    <a href="index.html" class="logo">MARTEX <span>REAL ESTATE</span></a>
+<!-- =========================
+     HEADER
+========================= -->
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<header class="site-header">
 
-    <nav id="mainNav">
-      <a href="index.html">Home</a>
-      <a href="properties.html">Properties</a>
-      <a href="inspection.html">Book Inspection</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <div class="header-container">
+
+        <a href="index.html" class="logo-area">
+            <img src="images/logo.png" alt="Martex Real Estate Logo">
+            <span>Martex Real Estate</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="inspection.html" class="active">
+                Book Inspection
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+        <a
+            href="https://wa.me/2347039236599"
+            class="header-whatsapp"
+            target="_blank"
+        >
+            WhatsApp
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
 </header>
 
-<section class="page-hero">
-  <div class="container">
-    <p class="section-label">MARTEX REAL ESTATE</p>
-    <h1>Book a Property Inspection</h1>
-    <p>Choose a property and request a convenient inspection appointment.</p>
-  </div>
-</section>
 
-<section class="form-section">
-  <div class="container form-container">
+<!-- =========================
+     PAGE HERO
+========================= -->
 
-    <div class="form-intro">
-      <p class="section-label">INSPECTION REQUEST</p>
-      <h2>Schedule Your Inspection</h2>
-      <p>
-        Complete the form below and our team will contact you
-        to confirm your inspection appointment.
-      </p>
-    </div>
+<section class="property-page-hero">
 
-    <form id="inspectionForm" onsubmit="submitInspection(event)">
+    <div class="section-container">
 
-      <label for="clientName">Full Name</label>
-      <input type="text" id="clientName" required placeholder="Enter your full name">
+        <p class="section-label">
+            PROPERTY INSPECTION
+        </p>
 
-      <label for="phone">Phone / WhatsApp Number</label>
-      <input type="tel" id="phone" required placeholder="Enter your phone number">
+        <h1>
+            Book Your Inspection
+        </h1>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="Enter your email">
-
-      <label for="property">Property of Interest</label>
-      <select id="property" required>
-        <option value="">Select a property</option>
-        <option>Standard 4 Bedroom Duplex - ₦250M</option>
-        <option>50 × 100 Ogbeozoma - ₦30M</option>
-        <option>50 × 100 Ogbeobi - ₦15M</option>
-        <option>50 × 100 Major Road - ₦12M</option>
-        <option>5 Bedroom Duplex + 3 Bedroom BQ - ₦230M</option>
-        <option>85 × 100 Behind Toscana - ₦300M</option>
-        <option>100 × 300 Jesus Save Major Road - ₦600M</option>
-      </select>
-
-      <label for="date">Preferred Inspection Date</label>
-      <input type="date" id="date" required>
-
-      <label for="time">Preferred Time</label>
-      <input type="time" id="time" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" placeholder="Tell us anything else about your inspection request"></textarea>
-
-      <button type="submit" class="btn form-button">
-        Submit Inspection Request
-      </button>
-
-    </form>
-
-    <div id="inspectionResult" class="form-result"></div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-
-    <div>
-      <h3>MARTEX REAL ESTATE</h3>
-      <p>Quality property opportunities for buyers and investors.</p>
-    </div>
-
-    <div>
-      <h4>Contact</h4>
-      <p>📞 07039236599</p>
-      <p>✉️ Patmatchuka10@gmail.com</p>
-    </div>
-
-    <div>
-      <h4>Address</h4>
-      <p>
-        Stop 6 Christ is King Plaza,
-        Black Gate Junction,
-        Okpanam Road
-      </p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 Martex Real Estate. All Rights Reserved.
-  </div>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+        <p>
+            Found a property you're interested in?
+            Schedule an inspection and our team will
+            assist you with the next step.
+        </p>
