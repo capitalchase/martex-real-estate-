@@ -138,7 +138,6 @@ p {
     text-transform: uppercase;
 }
 
-
 /* =========================================================
    5. HEADER
    ========================================================= */
@@ -148,10 +147,10 @@ p {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 0.98);
     border-bottom: 1px solid rgba(226, 232, 240, 0.9);
-    box-shadow: 0 3px 18px rgba(11, 31, 51, 0.05);
-    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 22px rgba(11, 31, 51, 0.08);
+    backdrop-filter: blur(14px);
 }
 
 .nav-container {
@@ -191,16 +190,16 @@ p {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
 }
 
 .main-nav a {
     position: relative;
-    padding: 10px 14px;
+    padding: 11px 14px;
     color: #425163;
     font-size: 0.94rem;
     font-weight: 600;
-    transition: 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .main-nav a:hover {
@@ -209,6 +208,7 @@ p {
 
 .main-nav a.active {
     color: var(--navy);
+    font-weight: 700;
 }
 
 .main-nav a.active::after {
@@ -216,23 +216,28 @@ p {
     position: absolute;
     left: 14px;
     right: 14px;
-    bottom: 2px;
+    bottom: 3px;
     height: 2px;
     background: var(--gold);
     border-radius: 20px;
 }
 
+
+/* WhatsApp navigation button */
+
 .main-nav .nav-whatsapp {
-    margin-left: 8px;
-    padding: 10px 17px;
+    margin-left: 10px;
+    padding: 11px 18px;
     border-radius: 7px;
     background: var(--navy);
     color: white;
+    box-shadow: 0 6px 16px rgba(11, 31, 51, 0.15);
 }
 
 .main-nav .nav-whatsapp:hover {
     background: var(--navy-light);
     color: white;
+    transform: translateY(-1px);
 }
 
 .main-nav .nav-whatsapp::after {
@@ -310,7 +315,143 @@ p {
     font-size: 1.08rem;
 }
 
+/* =========================================================
+   6B. HOME PAGE VIDEO HERO
+   ========================================================= */
 
+.hero-section {
+    position: relative;
+    min-height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--navy-dark);
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 22, 36, 0.92) 0%,
+            rgba(7, 22, 36, 0.78) 38%,
+            rgba(7, 22, 36, 0.42) 72%,
+            rgba(7, 22, 36, 0.28) 100%
+        );
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    z-index: 2;
+    background: linear-gradient(
+        to top,
+        rgba(7, 22, 36, 0.55),
+        transparent
+    );
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 75px;
+}
+
+.hero-content h1 {
+    max-width: 760px;
+    margin-bottom: 22px;
+    color: white;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content h1 span {
+    display: block;
+    color: var(--gold-light);
+}
+
+.hero-content p {
+    max-width: 650px;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    line-height: 1.75;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    margin-bottom: 22px;
+    padding: 7px 13px;
+    border: 1px solid rgba(225, 188, 114, 0.45);
+    border-radius: 30px;
+    background: rgba(7, 22, 36, 0.55);
+    color: var(--gold-light);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-buttons .btn-primary {
+    min-height: 53px;
+    padding: 14px 25px;
+    background: var(--gold);
+    color: white;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: var(--gold-light);
+    color: var(--navy-dark);
+    transform: translateY(-2px);
+}
+
+.hero-buttons .btn-outline {
+    min-height: 53px;
+    padding: 14px 25px;
+    border-color: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.hero-buttons .btn-outline:hover {
+    border-color: white;
+    background: white;
+    color: var(--navy);
+    transform: translateY(-2px);
+}
 /* =========================================================
    7. SECTION HEADINGS
    ========================================================= */
@@ -1305,7 +1446,46 @@ p {
         gap: 35px 25px;
         padding: 55px 0;
     }
+   /* Home hero */
 
+    .hero-section {
+        min-height: calc(100vh - 72px);
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(7, 22, 36, 0.88),
+                rgba(7, 22, 36, 0.62)
+            );
+    }
+
+    .hero-content {
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+
+    .hero-content h1 {
+        max-width: 600px;
+        font-size: clamp(2.45rem, 10vw, 3.6rem);
+        line-height: 1.06;
+    }
+
+    .hero-content p {
+        max-width: 560px;
+        font-size: 0.96rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 330px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
 }
 
 
@@ -1321,6 +1501,28 @@ p {
 
     .page-hero h1 {
         font-size: 2rem;
+    }
+
+   .hero-section {
+        min-height: calc(100svh - 72px);
+    }
+
+    .hero-content h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero-content p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .hero-badge {
+        font-size: 0.62rem;
+        letter-spacing: 0.11em;
+    }
+
+    .hero-buttons {
+        max-width: none;
     }
 
     .page-hero {
