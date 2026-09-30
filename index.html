@@ -2,50 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Martex Real Estate | Premium Properties in Asaba</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Martex Real Estate offers premium residential and land properties in Asaba and surrounding areas."
+        content="Martex Real Estate — Premium properties, land and investment opportunities in Asaba, Delta State, Nigeria."
     >
+
+    <meta
+        name="theme-color"
+        content="#0b1f33"
+    >
+
+    <title>Martex Real Estate | Premium Properties & Land</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =====================================================
+<!-- =========================================================
      HEADER
-===================================================== -->
+========================================================= -->
 
 <header class="site-header">
 
-    <div class="container nav-container">
+    <div class="container header-container">
 
-        <a href="index.html" class="logo-link">
-            <img
-                src="images/logo.png"
-                alt="Martex Real Estate Logo"
-                class="site-logo"
-            >
-
-            <span class="brand-name">
-                Martex Real Estate
-            </span>
+        <a href="index.html" class="logo">
+            <span class="logo-main">MARTEX</span>
+            <span class="logo-sub">REAL ESTATE</span>
         </a>
 
         <button
             class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation menu"
             type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
         >
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
-        <nav class="main-nav" id="mainNav">
+        <nav class="main-nav">
 
             <a href="index.html" class="active">
                 Home
@@ -65,9 +69,9 @@
 
             <a
                 href="https://wa.me/2347039236599"
+                class="nav-whatsapp"
                 target="_blank"
                 rel="noopener"
-                class="nav-whatsapp"
             >
                 WhatsApp
             </a>
@@ -79,50 +83,52 @@
 </header>
 
 
-<!-- =====================================================
+<!-- =========================================================
      HERO
-===================================================== -->
+========================================================= -->
 
-<section class="hero-section">
+<section class="hero">
 
-    <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
-        poster="images/hero.jpg"
-    >
+    <div class="hero-video-wrap">
 
-        <source
-            src="videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4"
-            type="video/mp4"
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="images/hero.jpg"
         >
+            <source
+                src="videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4"
+                type="video/mp4"
+            >
 
-        Your browser does not support HTML5 video.
+            Your browser does not support HTML5 video.
+        </video>
 
-    </video>
+    </div>
 
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
 
-        <span class="hero-badge">
+        <span class="section-label">
             PREMIUM REAL ESTATE
         </span>
 
         <h1>
-            Find a Property
-            <span>Worth Coming Home To.</span>
+            Find Property With
+            <span>Confidence.</span>
         </h1>
 
         <p>
-            Discover quality homes, premium land and exceptional
-            investment opportunities in Asaba and surrounding areas.
+            Discover carefully selected homes, land and investment
+            opportunities in Asaba and surrounding areas.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
 
             <a
                 href="properties.html"
@@ -145,9 +151,9 @@
 </section>
 
 
-<!-- =====================================================
-     INTRO
-===================================================== -->
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
 
 <section class="intro-section">
 
@@ -156,51 +162,19 @@
         <div class="section-heading">
 
             <span class="section-label">
-                MARtex real estate
+                WHY MARTEX
             </span>
 
             <h2>
-                Property Opportunities That Make Sense
+                Property Decisions Made Simpler
             </h2>
 
             <p>
-                Whether you are looking for a family home, a piece of land
-                or a long-term investment, explore carefully selected
-                properties available in strategic locations.
+                Whether you are looking for a family home, a strategic
+                piece of land or your next investment opportunity,
+                Martex Real Estate helps you find properties that fit
+                your goals.
             </p>
-
-        </div>
-
-        <div class="quick-links">
-
-            <a href="properties.html" class="quick-link">
-                <span class="quick-icon">⌂</span>
-                <span>
-                    <strong>View Properties</strong>
-                    <small>Explore available listings</small>
-                </span>
-            </a>
-
-            <a href="inspection.html" class="quick-link">
-                <span class="quick-icon">✓</span>
-                <span>
-                    <strong>Book Inspection</strong>
-                    <small>Arrange a property visit</small>
-                </span>
-            </a>
-
-            <a
-                href="https://wa.me/2347039236599"
-                target="_blank"
-                rel="noopener"
-                class="quick-link"
-            >
-                <span class="quick-icon">↗️</span>
-                <span>
-                    <strong>Talk to Us</strong>
-                    <small>Chat with Martex on WhatsApp</small>
-                </span>
-            </a>
 
         </div>
 
@@ -209,9 +183,9 @@
 </section>
 
 
-<!-- =====================================================
-     FEATURED PROPERTIES
-===================================================== -->
+<!-- =========================================================
+     AVAILABLE PROPERTIES
+========================================================= -->
 
 <section class="properties-section">
 
@@ -220,7 +194,7 @@
         <div class="section-heading">
 
             <span class="section-label">
-                Featured Properties
+                OUR LISTINGS
             </span>
 
             <h2>
@@ -228,8 +202,8 @@
             </h2>
 
             <p>
-                Take a closer look at some of our residential and land
-                opportunities currently available.
+                Take a closer look at some of our currently available
+                properties and land opportunities.
             </p>
 
         </div>
@@ -238,29 +212,26 @@
         <div class="property-grid">
 
 
-            <!-- PROPERTY 1 -->
+            <!-- =================================================
+                 PROPERTY 1
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -274,35 +245,27 @@
                         Standard 4 Bedroom Duplex
                     </h3>
 
-                    <div class="property-location">
-                        📍 Asaba, Delta State
-                    </div>
-
-                    <p>
-                        A spacious modern duplex suitable for family living
-                        and premium residential investment.
+                    <p class="property-location">
+                        Asaba, Delta State
                     </p>
 
-                    <div class="property-price">
-                        ₦250,000,000
-                    </div>
+                    <p>
+                        Modern 4-bedroom duplex featuring a swimming
+                        pool, CCTV cameras and boys' quarter. The
+                        property uses a 33-line power system.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦250,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=Standard%204%20Bedroom%20Duplex"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -312,29 +275,26 @@
             </article>
 
 
-            <!-- PROPERTY 2 -->
+            <!-- =================================================
+                 PROPERTY 2
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/2fe50783-5a32-494f-a589-d8ec00e73803.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -345,38 +305,30 @@
                     </span>
 
                     <h3>
-                        50×100 Ogbeozoma
+                        50 × 100 Plot at Ogbeozoma
                     </h3>
 
-                    <div class="property-location">
-                        📍 Okpanam
-                    </div>
-
-                    <p>
-                        A strategically located plot suitable for residential
-                        development and future investment.
+                    <p class="property-location">
+                        Ogbeozoma, Okpanam
                     </p>
 
-                    <div class="property-price">
-                        ₦30,000,000
-                    </div>
+                    <p>
+                        Approximately 3 poles from the Asaba-Benin
+                        Expressway. Suitable for residential
+                        development and investment.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦30,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=50%20x%20100%20Plot%20at%20Ogbeozoma"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -386,29 +338,26 @@
             </article>
 
 
-            <!-- PROPERTY 3 -->
+            <!-- =================================================
+                 PROPERTY 3
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/36e095e9-6b17-48f2-903c-01e6a609272d.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -419,38 +368,30 @@
                     </span>
 
                     <h3>
-                        50×100 Ogbeobi
+                        50 × 100 Plot at Ogbeobi
                     </h3>
 
-                    <div class="property-location">
-                        📍 Okpanam
-                    </div>
-
-                    <p>
-                        A well-positioned plot offering an opportunity for
-                        residential development and property investment.
+                    <p class="property-location">
+                        Ogbeobi, Okpanam
                     </p>
 
-                    <div class="property-price">
-                        ₦15,000,000
-                    </div>
+                    <p>
+                        Located after the Health Center. A strategic
+                        land opportunity offered at a net price with
+                        no room for negotiation.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦15,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=50%20x%20100%20Plot%20at%20Ogbeobi"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -460,29 +401,26 @@
             </article>
 
 
-            <!-- PROPERTY 4 -->
+            <!-- =================================================
+                 PROPERTY 4
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/19f5de24-ee07-4d5d-b165-5d4977b88d10.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -493,38 +431,30 @@
                     </span>
 
                     <h3>
-                        50×100 Major Road
+                        50 × 100 Plot on Major Road
                     </h3>
 
-                    <div class="property-location">
-                        📍 Ogbeobi, Okpanam via Obodogwugwu
-                    </div>
-
-                    <p>
-                        A strategically positioned property with convenient
-                        access and development potential.
+                    <p class="property-location">
+                        Ogbeobi, Okpanam via Obodogwugwu
                     </p>
 
-                    <div class="property-price">
-                        ₦12,000,000
-                    </div>
+                    <p>
+                        A strategically positioned plot on a major
+                        road with allocation paper and deed of
+                        conveyance.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦12,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=50%20x%20100%20Plot%20on%20Major%20Road"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -534,29 +464,26 @@
             </article>
 
 
-            <!-- PROPERTY 5 -->
+            <!-- =================================================
+                 PROPERTY 5
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/edc396a6-b1be-4311-8ad6-0580419b0c55.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -570,35 +497,27 @@
                         5 Bedroom Duplex + 3 Bedroom BQ
                     </h3>
 
-                    <div class="property-location">
-                        📍 Nwawolo Market Axis
-                    </div>
-
-                    <p>
-                        A substantial residential property offering multiple
-                        living spaces and strong family accommodation.
+                    <p class="property-location">
+                        Nwawolo Market Axis
                     </p>
 
-                    <div class="property-price">
-                        ₦230,000,000
-                    </div>
+                    <p>
+                        Spacious residential property with a separate
+                        3-bedroom boys' quarter, suitable for family
+                        living or investment.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦230,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=5%20Bedroom%20Duplex%20%2B%203%20Bedroom%20BQ"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -608,29 +527,26 @@
             </article>
 
 
-            <!-- PROPERTY 6 -->
+            <!-- =================================================
+                 PROPERTY 6
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/c9f3dc22-ebae-4fb6-bf9a-a4d7fa1f5497.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
@@ -641,38 +557,29 @@
                     </span>
 
                     <h3>
-                        85×100 Behind Toscana
+                        85 × 100 Land Behind Toscana
                     </h3>
 
-                    <div class="property-location">
-                        📍 DBS Road Area, Asaba
-                    </div>
-
-                    <p>
-                        A large parcel in a desirable Asaba location,
-                        suitable for development and investment.
+                    <p class="property-location">
+                        DBS Road Area, Asaba
                     </p>
 
-                    <div class="property-price">
-                        ₦300,000,000
-                    </div>
+                    <p>
+                        Large development land positioned behind
+                        Toscana in the DBS Road area of Asaba.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦300,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=85%20x%20100%20Land%20Behind%20Toscana"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -682,71 +589,61 @@
             </article>
 
 
-            <!-- PROPERTY 7 -->
+            <!-- =================================================
+                 PROPERTY 7
+            ================================================== -->
 
             <article class="property-card">
 
-                <div class="property-video">
+                <div class="property-media">
 
                     <video
-                        muted
-                        loop
+                        controls
                         playsinline
                         preload="metadata"
                     >
-
                         <source
                             src="videos/f1d9eb16-32b4-457a-b9a3-bfdbc5372603.mp4"
                             type="video/mp4"
                         >
 
+                        Your browser does not support HTML5 video.
                     </video>
-
-                    <span class="property-tag">
-                        FOR SALE
-                    </span>
 
                 </div>
 
                 <div class="property-content">
 
                     <span class="property-type">
-                        LAND
+                        DEVELOPMENT LAND
                     </span>
 
                     <h3>
-                        100×300 Major Road
+                        100 × 300 Major Road Property
                     </h3>
 
-                    <div class="property-location">
-                        📍 Jesus Save Area
-                    </div>
-
-                    <p>
-                        A substantial major-road property offering significant
-                        space for large-scale development and investment.
+                    <p class="property-location">
+                        Jesus Save Area
                     </p>
 
-                    <div class="property-price">
-                        ₦600,000,000
-                    </div>
+                    <p>
+                        Located just after Presidential Villa. Suitable
+                        for major developments such as a hotel,
+                        apartments, school, hospital or other
+                        commercial projects.
+                    </p>
 
-                    <div class="property-actions">
+                    <div class="property-bottom">
+
+                        <strong class="property-price">
+                            ₦600,000,000
+                        </strong>
 
                         <a
-                            href="inspection.html"
-                            class="property-btn"
+                            href="inspection.html?property=100%20x%20300%20Major%20Road%20Property"
+                            class="property-link"
                         >
                             Book Inspection
-                        </a>
-
-                        <a
-                            href="https://wa.me/2347039236599"
-                            target="_blank"
-                            rel="noopener"
-                            class="property-whatsapp"
-                        >
-                            WhatsApp
                         </a>
 
                     </div>
@@ -758,7 +655,7 @@
         </div>
 
 
-        <div class="center-button">
+        <div class="section-action">
 
             <a
                 href="properties.html"
@@ -774,9 +671,9 @@
 </section>
 
 
-<!-- =====================================================
-     WHY MARTEX
-===================================================== -->
+<!-- =========================================================
+     WHY CHOOSE MARTEX
+========================================================= -->
 
 <section class="why-section">
 
@@ -785,62 +682,59 @@
         <div class="section-heading">
 
             <span class="section-label">
-                Why Martex
+                THE MARTEX DIFFERENCE
             </span>
 
             <h2>
-                A Simpler Way to Find Property
+                Built Around Your Property Goals
             </h2>
-
-            <p>
-                We focus on making property discovery straightforward,
-                transparent and convenient.
-            </p>
 
         </div>
 
 
-        <div class="benefits-grid">
+        <div class="why-grid">
 
-            <div class="benefit-card">
+            <div class="why-card">
 
-                <div class="benefit-icon">
+                <div class="why-icon">
                     01
                 </div>
 
                 <h3>
-                    Strategic Locations
+                    Carefully Selected
                 </h3>
 
                 <p>
-                    Explore properties positioned in locations with
-                    residential and investment potential.
+                    We showcase property opportunities selected
+                    for residential, commercial and investment
+                    purposes.
                 </p>
 
             </div>
 
 
-            <div class="benefit-card">
+            <div class="why-card">
 
-                <div class="benefit-icon">
+                <div class="why-icon">
                     02
                 </div>
 
                 <h3>
-                    Property Variety
+                    Local Knowledge
                 </h3>
 
                 <p>
-                    Choose from homes, land and other property opportunities
-                    suited to different needs.
+                    Our listings focus on locations and property
+                    opportunities within Asaba and surrounding
+                    areas.
                 </p>
 
             </div>
 
 
-            <div class="benefit-card">
+            <div class="why-card">
 
-                <div class="benefit-icon">
+                <div class="why-icon">
                     03
                 </div>
 
@@ -849,16 +743,16 @@
                 </h3>
 
                 <p>
-                    Arrange an inspection and get a closer look before making
-                    your property decision.
+                    Schedule an inspection and get the opportunity
+                    to view a property before making your decision.
                 </p>
 
             </div>
 
 
-            <div class="benefit-card">
+            <div class="why-card">
 
-                <div class="benefit-icon">
+                <div class="why-icon">
                     04
                 </div>
 
@@ -867,8 +761,8 @@
                 </h3>
 
                 <p>
-                    Contact our team directly through WhatsApp for property
-                    enquiries and inspection arrangements.
+                    Contact our team directly through WhatsApp or
+                    our contact page for property enquiries.
                 </p>
 
             </div>
@@ -880,86 +774,34 @@
 </section>
 
 
-<!-- =====================================================
-     INSPECTION CTA
-===================================================== -->
-
-<section class="inspection-cta">
-
-    <div class="container">
-
-        <div class="cta-box">
-
-            <div>
-
-                <span class="section-label">
-                    Property Inspection
-                </span>
-
-                <h2>
-                    See the Property Before You Decide
-                </h2>
-
-                <p>
-                    Schedule an inspection and experience the property
-                    location for yourself.
-                </p>
-
-            </div>
-
-            <div class="cta-buttons">
-
-                <a
-                    href="inspection.html"
-                    class="btn btn-primary"
-                >
-                    Book Inspection
-                </a>
-
-                <a
-                    href="https://wa.me/2347039236599"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-outline"
-                >
-                    WhatsApp Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
+<!-- =========================================================
      ABOUT
-===================================================== -->
+========================================================= -->
 
 <section class="about-section">
 
-    <div class="container about-grid">
+    <div class="container about-container">
 
         <div class="about-content">
 
             <span class="section-label">
-                About Martex
+                ABOUT MARTEX
             </span>
 
             <h2>
-                Helping You Find the Right Property Opportunity
+                Your Property Journey Starts Here
             </h2>
 
             <p>
-                Martex Real Estate connects buyers with residential and
-                land opportunities in strategic locations.
+                Martex Real Estate connects buyers and investors
+                with residential properties, land and development
+                opportunities.
             </p>
 
             <p>
-                From property discovery to inspection arrangements, our goal
-                is to make the process clear and convenient.
+                From finding the right location to arranging an
+                inspection, our goal is to make your property
+                search clear and straightforward.
             </p>
 
             <a
@@ -971,73 +813,52 @@
 
         </div>
 
-
-        <div class="about-highlight">
-
-            <div class="about-highlight-item">
-                <strong>7+</strong>
-                <span>Featured Properties</span>
-            </div>
-
-            <div class="about-highlight-item">
-                <strong>Asaba</strong>
-                <span>Property Focus</span>
-            </div>
-
-            <div class="about-highlight-item">
-                <strong>Direct</strong>
-                <span>WhatsApp Support</span>
-            </div>
-
-        </div>
-
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+<!-- =========================================================
+     CALL TO ACTION
+========================================================= -->
 
-<section class="contact-section">
+<section class="cta-section">
 
-    <div class="container">
+    <div class="container cta-container">
 
-        <div class="section-heading">
+        <div>
 
             <span class="section-label">
-                Get In Touch
+                READY TO VIEW A PROPERTY?
             </span>
 
             <h2>
-                Ready to Explore a Property?
+                Let's Arrange Your Inspection
             </h2>
 
             <p>
-                Contact Martex Real Estate for property information,
-                inspection arrangements and enquiries.
+                Choose a property and schedule a convenient time
+                to visit.
             </p>
 
         </div>
 
-
-        <div class="contact-actions">
+        <div class="cta-actions">
 
             <a
-                href="contact.html"
+                href="inspection.html"
                 class="btn btn-primary"
             >
-                Contact Us
+                Book Inspection
             </a>
 
             <a
                 href="https://wa.me/2347039236599"
+                class="btn btn-whatsapp"
                 target="_blank"
                 rel="noopener"
-                class="btn btn-outline"
             >
-                Chat on WhatsApp
+                WhatsApp Us
             </a>
 
         </div>
@@ -1047,29 +868,24 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      FOOTER
-===================================================== -->
+========================================================= -->
 
 <footer class="site-footer">
 
-    <div class="container footer-grid">
+    <div class="container footer-container">
 
-        <div class="footer-brand">
 
-            <img
-                src="images/logo.png"
-                alt="Martex Real Estate Logo"
-                class="footer-logo"
-            >
+        <div class="footer-about">
 
-            <h3>
-                Martex Real Estate
-            </h3>
+            <a href="index.html" class="footer-logo">
+                MARTEX
+            </a>
 
             <p>
-                Connecting you with quality homes, land and real estate
-                opportunities.
+                Premium real estate opportunities, homes and land
+                in Asaba, Delta State and surrounding areas.
             </p>
 
         </div>
@@ -1077,9 +893,9 @@
 
         <div class="footer-links">
 
-            <h4>
-                Navigation
-            </h4>
+            <h3>
+                Quick Links
+            </h3>
 
             <a href="index.html">
                 Home
@@ -1100,32 +916,11 @@
         </div>
 
 
-        <div class="footer-links">
+        <div class="footer-contact">
 
-            <h4>
-                Properties
-            </h4>
-
-            <a href="properties.html">
-                Residential
-            </a>
-
-            <a href="properties.html">
-                Land
-            </a>
-
-            <a href="inspection.html">
-                Property Inspection
-            </a>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <h4>
+            <h3>
                 Contact
-            </h4>
+            </h3>
 
             <a
                 href="https://wa.me/2347039236599"
@@ -1136,10 +931,11 @@
             </a>
 
             <a href="contact.html">
-                Contact Page
+                Send an Enquiry
             </a>
 
         </div>
+
 
     </div>
 
@@ -1160,110 +956,143 @@
 </footer>
 
 
-<!-- =====================================================
+<!-- =========================================================
      FLOATING WHATSAPP
-===================================================== -->
+========================================================= -->
 
 <a
     href="https://wa.me/2347039236599"
+    class="floating-whatsapp"
     target="_blank"
     rel="noopener"
-    class="whatsapp-float"
     aria-label="Chat with Martex Real Estate on WhatsApp"
 >
-    <span>☏</span>
+    <span>WhatsApp</span>
 </a>
 
 
-<!-- =====================================================
+<!-- =========================================================
      JAVASCRIPT
-===================================================== -->
+========================================================= -->
+
+<script src="script.js"></script>
 
 <script>
 
-    /* Mobile menu */
+document.addEventListener("DOMContentLoaded", function () {
 
-    const menuToggle = document.getElementById("menuToggle");
-    const mainNav = document.getElementById("mainNav");
+    /* ---------------------------------------------------------
+       CURRENT YEAR
+    --------------------------------------------------------- */
 
-    menuToggle.addEventListener("click", function () {
+    const yearElement =
+        document.getElementById("currentYear");
 
-        mainNav.classList.toggle("show");
-
-        const isOpen = mainNav.classList.contains("show");
-
-        menuToggle.setAttribute(
-            "aria-label",
-            isOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-        );
-
-    });
+    if (yearElement) {
+        yearElement.textContent =
+            new Date().getFullYear();
+    }
 
 
-    /* Close mobile menu after clicking a link */
+    /* ---------------------------------------------------------
+       MOBILE MENU
+    --------------------------------------------------------- */
 
-    document.querySelectorAll(".main-nav a").forEach(function (link) {
+    const menuToggle =
+        document.querySelector(".menu-toggle");
 
-        link.addEventListener("click", function () {
-            mainNav.classList.remove("show");
+    const mainNav =
+        document.querySelector(".main-nav");
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function () {
+
+            const isOpen =
+                mainNav.classList.toggle("open");
+
             menuToggle.setAttribute(
-                "aria-label",
-                "Open navigation menu"
+                "aria-expanded",
+                isOpen ? "true" : "false"
             );
+
         });
 
-    });
 
+        mainNav.querySelectorAll("a").forEach(function (link) {
 
-    /* Current year */
+            link.addEventListener("click", function () {
 
-    document.getElementById("currentYear").textContent =
-        new Date().getFullYear();
+                mainNav.classList.remove("open");
 
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
-    /* Property videos */
-
-    const propertyVideos =
-        document.querySelectorAll(".property-video video");
-
-
-    if ("IntersectionObserver" in window) {
-
-        const videoObserver = new IntersectionObserver(
-            function (entries) {
-
-                entries.forEach(function (entry) {
-
-                    const video = entry.target;
-
-                    if (entry.isIntersecting) {
-
-                        video.play().catch(function () {});
-
-                    } else {
-
-                        video.pause();
-
-                    }
-
-                });
-
-            },
-            {
-                threshold: 0.35
-            }
-        );
-
-
-        propertyVideos.forEach(function (video) {
-
-            videoObserver.observe(video);
+            });
 
         });
 
     }
+
+
+    /* ---------------------------------------------------------
+       PROPERTY VIDEOS
+       
+       IMPORTANT:
+       There is NO "muted" property here.
+
+       Visitors can press Play and hear the original
+       audio contained in each video.
+    --------------------------------------------------------- */
+
+    const propertyVideos =
+        document.querySelectorAll(
+            ".property-media video"
+        );
+
+    propertyVideos.forEach(function (video) {
+
+        video.removeAttribute("muted");
+
+        video.muted = false;
+
+        video.addEventListener("play", function () {
+
+            propertyVideos.forEach(function (otherVideo) {
+
+                if (
+                    otherVideo !== video &&
+                    !otherVideo.paused
+                ) {
+                    otherVideo.pause();
+                }
+
+            });
+
+        });
+
+    });
+
+
+    /* ---------------------------------------------------------
+       HERO VIDEO
+       
+       The hero remains muted because it autoplays.
+       This allows reliable autoplay on mobile browsers.
+    --------------------------------------------------------- */
+
+    const heroVideo =
+        document.querySelector(".hero-video");
+
+    if (heroVideo) {
+
+        heroVideo.muted = true;
+
+    }
+
+});
 
 </script>
 
