@@ -1,12 +1,23 @@
 /* =========================================================
    MARTEX REAL ESTATE
-   COMPLETE PROFESSIONAL STYLESHEET
+   HOMEPAGE STYLESHEET
    ========================================================= */
 
-
-/* =========================================================
-   1. RESET
-   ========================================================= */
+:root {
+    --navy: #0b1f33;
+    --navy-dark: #071624;
+    --navy-light: #123452;
+    --gold: #c79a45;
+    --gold-light: #e1bc72;
+    --white: #ffffff;
+    --bg: #f6f8fb;
+    --text: #182230;
+    --muted: #687585;
+    --border: #e2e8f0;
+    --shadow: 0 12px 35px rgba(11,31,51,.10);
+    --shadow-lg: 0 22px 55px rgba(11,31,51,.15);
+    --container: 1180px;
+}
 
 * {
     margin: 0;
@@ -19,9 +30,9 @@ html {
 }
 
 body {
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    background: #f6f8fb;
-    color: #182230;
+    font-family: "Inter","Segoe UI",Arial,sans-serif;
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -40,88 +51,27 @@ a {
     text-decoration: none;
 }
 
-button,
-input,
-select,
-textarea {
-    font: inherit;
-}
-
 button {
+    font: inherit;
     cursor: pointer;
 }
 
-
-/* =========================================================
-   2. GLOBAL VARIABLES
-   ========================================================= */
-
-:root {
-    --navy: #0b1f33;
-    --navy-dark: #071624;
-    --navy-light: #123452;
-
-    --gold: #c79a45;
-    --gold-light: #e1bc72;
-
-    --white: #ffffff;
-    --off-white: #f8fafc;
-
-    --text: #182230;
-    --muted: #687585;
-
-    --border: #e2e8f0;
-    --border-dark: #cbd5e1;
-
-    --success: #16834a;
-
-    --shadow-sm: 0 4px 15px rgba(11, 31, 51, 0.06);
-    --shadow: 0 12px 35px rgba(11, 31, 51, 0.10);
-    --shadow-lg: 0 22px 55px rgba(11, 31, 51, 0.15);
-
-    --radius-sm: 8px;
-    --radius: 14px;
-    --radius-lg: 20px;
-
-    --container: 1180px;
-}
-
-
-/* =========================================================
-   3. CONTAINER
-   ========================================================= */
-
 .container {
-    width: min(92%, var(--container));
-    margin: 0 auto;
+    width: min(92%,var(--container));
+    margin: auto;
 }
 
 
 /* =========================================================
-   4. TYPOGRAPHY
+   TYPOGRAPHY
    ========================================================= */
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
     color: var(--navy);
     line-height: 1.2;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: clamp(2.3rem, 5vw, 4.2rem);
-}
-
-h2 {
-    font-size: clamp(1.9rem, 3vw, 2.8rem);
-}
-
-h3 {
-    font-size: 1.25rem;
 }
 
 p {
@@ -132,24 +82,41 @@ p {
     display: inline-block;
     margin-bottom: 12px;
     color: var(--gold);
-    font-size: 0.76rem;
+    font-size: .75rem;
     font-weight: 800;
-    letter-spacing: 0.16em;
+    letter-spacing: .16em;
     text-transform: uppercase;
 }
 
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+    font-size: clamp(1.9rem,3vw,2.8rem);
+    letter-spacing: -.03em;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: auto;
+}
+
+
 /* =========================================================
-   5. HEADER
+   HEADER
    ========================================================= */
 
 .site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.9);
-    box-shadow: 0 4px 22px rgba(11, 31, 51, 0.08);
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 22px rgba(11,31,51,.08);
     backdrop-filter: blur(14px);
 }
 
@@ -161,14 +128,10 @@ p {
     gap: 25px;
 }
 
-
-/* Logo */
-
 .logo-link {
     display: flex;
     align-items: center;
     gap: 12px;
-    flex-shrink: 0;
 }
 
 .site-logo {
@@ -181,34 +144,26 @@ p {
     color: var(--navy);
     font-size: 1.15rem;
     font-weight: 800;
-    letter-spacing: -0.02em;
 }
-
-
-/* Navigation */
 
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
 }
 
 .main-nav a {
     position: relative;
     padding: 11px 14px;
     color: #425163;
-    font-size: 0.94rem;
+    font-size: .94rem;
     font-weight: 600;
-    transition: all 0.25s ease;
+    transition: .25s ease;
 }
 
-.main-nav a:hover {
-    color: var(--navy);
-}
-
+.main-nav a:hover,
 .main-nav a.active {
     color: var(--navy);
-    font-weight: 700;
 }
 
 .main-nav a.active::after {
@@ -218,12 +173,9 @@ p {
     right: 14px;
     bottom: 3px;
     height: 2px;
-    background: var(--gold);
     border-radius: 20px;
+    background: var(--gold);
 }
-
-
-/* WhatsApp navigation button */
 
 .main-nav .nav-whatsapp {
     margin-left: 10px;
@@ -231,21 +183,12 @@ p {
     border-radius: 7px;
     background: var(--navy);
     color: white;
-    box-shadow: 0 6px 16px rgba(11, 31, 51, 0.15);
 }
 
 .main-nav .nav-whatsapp:hover {
     background: var(--navy-light);
     color: white;
-    transform: translateY(-1px);
 }
-
-.main-nav .nav-whatsapp::after {
-    display: none;
-}
-
-
-/* Mobile menu */
 
 .menu-toggle {
     display: none;
@@ -260,63 +203,7 @@ p {
 
 
 /* =========================================================
-   6. PAGE HERO
-   ========================================================= */
-
-.page-hero {
-    position: relative;
-    padding: 105px 0 100px;
-    background:
-        linear-gradient(
-            135deg,
-            rgba(7, 22, 36, 0.98),
-            rgba(11, 31, 51, 0.94)
-        );
-    overflow: hidden;
-}
-
-.page-hero::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    right: -160px;
-    top: -190px;
-    border: 1px solid rgba(199, 154, 69, 0.22);
-    border-radius: 50%;
-}
-
-.page-hero::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: -180px;
-    bottom: -190px;
-    border: 1px solid rgba(199, 154, 69, 0.16);
-    border-radius: 50%;
-}
-
-.page-hero .container {
-    position: relative;
-    z-index: 2;
-}
-
-.page-hero h1 {
-    max-width: 820px;
-    margin-bottom: 20px;
-    color: white;
-    letter-spacing: -0.04em;
-}
-
-.page-hero p {
-    max-width: 720px;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 1.08rem;
-}
-
-/* =========================================================
-   6B. HOME PAGE VIDEO HERO
+   HERO
    ========================================================= */
 
 .hero-section {
@@ -336,55 +223,48 @@ p {
     max-width: none;
     object-fit: cover;
     object-position: center;
-    z-index: 0;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    z-index: 1;
     background:
         linear-gradient(
             90deg,
-            rgba(7, 22, 36, 0.92) 0%,
-            rgba(7, 22, 36, 0.78) 38%,
-            rgba(7, 22, 36, 0.42) 72%,
-            rgba(7, 22, 36, 0.28) 100%
+            rgba(7,22,36,.93) 0%,
+            rgba(7,22,36,.78) 38%,
+            rgba(7,22,36,.42) 72%,
+            rgba(7,22,36,.25) 100%
         );
-}
-
-.hero-section::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 120px;
-    z-index: 2;
-    background: linear-gradient(
-        to top,
-        rgba(7, 22, 36, 0.55),
-        transparent
-    );
-    pointer-events: none;
 }
 
 .hero-content {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 75px;
+    padding: 50px 0 80px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    margin-bottom: 22px;
+    padding: 7px 13px;
+    border: 1px solid rgba(225,188,114,.45);
+    border-radius: 30px;
+    background: rgba(7,22,36,.55);
+    color: var(--gold-light);
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .14em;
 }
 
 .hero-content h1 {
     max-width: 760px;
     margin-bottom: 22px;
     color: white;
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-size: clamp(2.8rem,6vw,5rem);
     line-height: 1.05;
-    letter-spacing: -0.045em;
-    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    letter-spacing: -.045em;
 }
 
 .hero-content h1 span {
@@ -395,86 +275,19 @@ p {
 .hero-content p {
     max-width: 650px;
     margin-bottom: 32px;
-    color: rgba(255, 255, 255, 0.84);
-    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: rgba(255,255,255,.84);
+    font-size: clamp(1rem,1.5vw,1.15rem);
     line-height: 1.75;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    min-height: 34px;
-    margin-bottom: 22px;
-    padding: 7px 13px;
-    border: 1px solid rgba(225, 188, 114, 0.45);
-    border-radius: 30px;
-    background: rgba(7, 22, 36, 0.55);
-    color: var(--gold-light);
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    backdrop-filter: blur(8px);
 }
 
 .hero-buttons {
     display: flex;
-    align-items: center;
     gap: 12px;
 }
 
-.hero-buttons .btn-primary {
-    min-height: 53px;
-    padding: 14px 25px;
-    background: var(--gold);
-    color: white;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
-}
-
-.hero-buttons .btn-primary:hover {
-    background: var(--gold-light);
-    color: var(--navy-dark);
-    transform: translateY(-2px);
-}
-
-.hero-buttons .btn-outline {
-    min-height: 53px;
-    padding: 14px 25px;
-    border-color: rgba(255, 255, 255, 0.45);
-    background: rgba(255, 255, 255, 0.08);
-    color: white;
-    backdrop-filter: blur(8px);
-}
-
-.hero-buttons .btn-outline:hover {
-    border-color: white;
-    background: white;
-    color: var(--navy);
-    transform: translateY(-2px);
-}
-/* =========================================================
-   7. SECTION HEADINGS
-   ========================================================= */
-
-.section-heading {
-    max-width: 760px;
-    margin: 0 auto 55px;
-    text-align: center;
-}
-
-.section-heading h2 {
-    margin-bottom: 15px;
-    letter-spacing: -0.03em;
-}
-
-.section-heading p {
-    max-width: 650px;
-    margin: 0 auto;
-}
-
 
 /* =========================================================
-   8. GENERAL BUTTONS
+   BUTTONS
    ========================================================= */
 
 .btn {
@@ -483,84 +296,147 @@ p {
     justify-content: center;
     min-height: 50px;
     padding: 13px 23px;
-    border-radius: 8px;
     border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: .93rem;
     font-weight: 700;
-    font-size: 0.93rem;
-    transition: all 0.25s ease;
+    transition: .25s ease;
 }
 
 .btn-primary {
     background: var(--navy);
     color: white;
-    box-shadow: 0 8px 20px rgba(11, 31, 51, 0.15);
+    box-shadow: 0 8px 20px rgba(11,31,51,.15);
 }
 
 .btn-primary:hover {
     background: var(--navy-light);
     transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(11, 31, 51, 0.20);
 }
 
 .btn-outline {
-    border-color: var(--border-dark);
+    border-color: var(--border);
     background: white;
     color: var(--navy);
 }
 
 .btn-outline:hover {
     border-color: var(--gold);
-    color: var(--navy);
     transform: translateY(-2px);
 }
 
+.hero-buttons .btn-primary,
+.cta-buttons .btn-primary {
+    background: var(--gold);
+}
 
-/* =========================================================
-   9. PROPERTY INTRO
-   ========================================================= */
+.hero-buttons .btn-primary:hover,
+.cta-buttons .btn-primary:hover {
+    background: var(--gold-light);
+    color: var(--navy);
+}
 
-.properties-intro {
-    padding: 85px 0 20px;
+.hero-buttons .btn-outline {
+    border-color: rgba(255,255,255,.45);
+    background: rgba(255,255,255,.08);
+    color: white;
+}
+
+.hero-buttons .btn-outline:hover {
     background: white;
+    color: var(--navy);
 }
 
 
 /* =========================================================
-   10. PROPERTY GRID
+   INTRO
    ========================================================= */
 
-.all-properties-section {
-    padding: 55px 0 100px;
-    background: #f6f8fb;
+.intro-section {
+    padding: 85px 0 70px;
+    background: white;
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.quick-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(11,31,51,.05);
+    transition: .25s ease;
+}
+
+.quick-link:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.quick-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #eef3f7;
+    color: var(--navy);
+    font-weight: 800;
+}
+
+.quick-link strong,
+.quick-link small {
+    display: block;
+}
+
+.quick-link strong {
+    color: var(--navy);
+}
+
+.quick-link small {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+
+/* =========================================================
+   PROPERTIES
+   ========================================================= */
+
+.properties-section {
+    padding: 95px 0;
+    background: var(--bg);
 }
 
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 30px;
 }
 
-
-/* =========================================================
-   11. PROPERTY CARD
-   ========================================================= */
-
 .property-card {
     overflow: hidden;
-    background: white;
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-    transition: 0.3s ease;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(11,31,51,.06);
+    transition: .3s ease;
 }
 
 .property-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
-
-
-/* Property video */
 
 .property-video {
     position: relative;
@@ -576,25 +452,18 @@ p {
     object-fit: cover;
 }
 
-
-/* Property badge */
-
 .property-tag {
     position: absolute;
     top: 17px;
     left: 17px;
-    z-index: 3;
     padding: 7px 11px;
     border-radius: 5px;
     background: var(--gold);
     color: white;
-    font-size: 0.68rem;
+    font-size: .68rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
 }
-
-
-/* Property content */
 
 .property-content {
     padding: 28px;
@@ -604,39 +473,35 @@ p {
     display: inline-block;
     margin-bottom: 9px;
     color: var(--gold);
-    font-size: 0.72rem;
+    font-size: .72rem;
     font-weight: 800;
-    letter-spacing: 0.12em;
+    letter-spacing: .12em;
 }
 
 .property-content h3 {
     margin-bottom: 8px;
-    font-size: 1.4rem;
-    line-height: 1.3;
+    font-size: 1.35rem;
 }
 
 .property-location {
     margin-bottom: 15px;
     color: #566577;
-    font-size: 0.9rem;
+    font-size: .9rem;
     font-weight: 600;
 }
 
 .property-content > p:not(.property-location) {
-    min-height: 80px;
+    min-height: 70px;
     margin-bottom: 20px;
-    font-size: 0.93rem;
+    font-size: .93rem;
 }
 
 .property-price {
     margin-bottom: 22px;
     color: var(--navy);
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     font-weight: 800;
 }
-
-
-/* Property actions */
 
 .property-actions {
     display: flex;
@@ -645,15 +510,13 @@ p {
 
 .property-btn,
 .property-whatsapp {
+    min-height: 46px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 46px;
-    padding: 10px 15px;
     border-radius: 7px;
-    font-size: 0.86rem;
+    font-size: .86rem;
     font-weight: 700;
-    transition: 0.25s ease;
 }
 
 .property-btn {
@@ -667,426 +530,24 @@ p {
 }
 
 .property-whatsapp {
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 1px solid #d9e1e9;
-    color: var(--navy);
+    padding: 0 18px;
+    border: 1px solid var(--border);
     background: white;
+    color: var(--navy);
 }
 
 .property-whatsapp:hover {
     border-color: var(--gold);
 }
 
-
-/* =========================================================
-   12. INSPECTION PAGE
-   ========================================================= */
-
-.inspection-main-section {
-    padding: 95px 0;
-    background: #f6f8fb;
-}
-
-.inspection-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: 70px;
-    align-items: start;
-}
-
-
-/* Left information */
-
-.inspection-info {
-    padding-top: 10px;
-}
-
-.inspection-info h2 {
-    max-width: 500px;
-    margin-bottom: 18px;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    letter-spacing: -0.035em;
-}
-
-.inspection-info > p {
-    max-width: 570px;
-    margin-bottom: 35px;
-}
-
-
-/* Inspection features */
-
-.inspection-feature {
-    display: flex;
-    gap: 17px;
-    padding: 21px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.inspection-feature:first-of-type {
-    border-top: 1px solid var(--border);
-}
-
-.inspection-feature-icon {
-    width: 45px;
-    height: 45px;
-    flex: 0 0 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: #eef3f7;
-    font-size: 1.2rem;
-}
-
-.inspection-feature h3 {
-    margin-bottom: 4px;
-    font-size: 1rem;
-}
-
-.inspection-feature p {
-    font-size: 0.87rem;
-}
-
-
-/* Direct contact */
-
-.inspection-direct-contact {
-    margin-top: 32px;
-    padding: 22px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: white;
-}
-
-.inspection-direct-contact p {
-    margin-bottom: 13px;
-    font-weight: 600;
-    color: var(--navy);
+.center-button {
+    margin-top: 45px;
+    text-align: center;
 }
 
 
 /* =========================================================
-   13. PROFESSIONAL FORM CARDS
-   ========================================================= */
-
-.inspection-form-card,
-.contact-form-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    box-shadow: var(--shadow-lg);
-}
-
-
-/* Inspection form */
-
-.inspection-form-card {
-    padding: 42px;
-}
-
-.form-header {
-    padding-bottom: 25px;
-    margin-bottom: 28px;
-    border-bottom: 1px solid var(--border);
-}
-
-.form-header h2 {
-    margin-bottom: 9px;
-    font-size: 1.8rem;
-}
-
-.form-header p {
-    font-size: 0.92rem;
-}
-
-
-/* Form group */
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--navy);
-    font-size: 0.87rem;
-    font-weight: 700;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    border: 1px solid #d8e0e8;
-    border-radius: 8px;
-    background: #fbfcfd;
-    color: var(--text);
-    outline: none;
-    transition: 0.2s ease;
-}
-
-.form-group input,
-.form-group select {
-    height: 51px;
-    padding: 0 15px;
-}
-
-.form-group textarea {
-    min-height: 135px;
-    padding: 13px 15px;
-    resize: vertical;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: #9aa5b1;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--gold);
-    background: white;
-    box-shadow: 0 0 0 3px rgba(199, 154, 69, 0.10);
-}
-
-
-/* Form submit */
-
-.form-submit {
-    width: 100%;
-    margin-top: 5px;
-    border: none;
-    min-height: 54px;
-}
-
-.form-message {
-    margin-top: 13px;
-    color: var(--success);
-    font-size: 0.87rem;
-    font-weight: 600;
-}
-
-.form-note {
-    margin-top: 15px;
-    color: #8a96a3;
-    font-size: 0.78rem;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   14. CONTACT PAGE
-   ========================================================= */
-
-.contact-main-section {
-    padding: 90px 0;
-    background: white;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.contact-card {
-    display: block;
-    padding: 30px 24px;
-    min-height: 220px;
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    background: white;
-    box-shadow: var(--shadow-sm);
-    transition: 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(199, 154, 69, 0.5);
-    box-shadow: var(--shadow);
-}
-
-.contact-icon {
-    width: 49px;
-    height: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: #eef3f7;
-    font-size: 1.2rem;
-}
-
-.contact-card h3 {
-    margin-bottom: 8px;
-}
-
-.contact-card p {
-    min-height: 52px;
-    font-size: 0.87rem;
-}
-
-.contact-action {
-    display: inline-block;
-    margin-top: 13px;
-    color: var(--gold);
-    font-size: 0.82rem;
-    font-weight: 800;
-}
-
-
-/* =========================================================
-   15. CONTACT FORM SECTION
-   ========================================================= */
-
-.contact-form-section {
-    padding: 100px 0;
-    background: #f6f8fb;
-}
-
-.contact-form-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-    gap: 70px;
-    align-items: start;
-}
-
-
-/* Left panel */
-
-.contact-info-panel {
-    padding-top: 15px;
-}
-
-.contact-info-panel h2 {
-    margin-bottom: 17px;
-    font-size: clamp(2rem, 3vw, 2.8rem);
-}
-
-.contact-info-panel > p {
-    max-width: 500px;
-    margin-bottom: 32px;
-}
-
-
-/* Info items */
-
-.contact-info-item {
-    display: flex;
-    gap: 15px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.contact-info-icon {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9px;
-    background: white;
-    box-shadow: var(--shadow-sm);
-}
-
-.contact-info-item strong {
-    display: block;
-    margin-bottom: 3px;
-    color: var(--navy);
-}
-
-.contact-info-item p {
-    font-size: 0.85rem;
-}
-
-.contact-info-panel .btn {
-    margin-top: 30px;
-}
-
-
-/* Contact form */
-
-.contact-form-card {
-    padding: 42px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-
-/* =========================================================
-   16. CTA
-   ========================================================= */
-
-.inspection-cta {
-    padding: 75px 0;
-    background: white;
-}
-
-.cta-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 45px 50px;
-    border-radius: 18px;
-    background:
-        linear-gradient(
-            135deg,
-            var(--navy-dark),
-            var(--navy)
-        );
-    box-shadow: var(--shadow-lg);
-}
-
-.cta-box h2 {
-    margin-bottom: 10px;
-    color: white;
-    font-size: clamp(1.7rem, 3vw, 2.4rem);
-}
-
-.cta-box p {
-    max-width: 600px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 11px;
-    flex-shrink: 0;
-}
-
-.cta-box .btn-primary {
-    background: var(--gold);
-    color: white;
-}
-
-.cta-box .btn-primary:hover {
-    background: var(--gold-light);
-}
-
-.cta-box .btn-outline {
-    border-color: rgba(255, 255, 255, 0.3);
-    background: transparent;
-    color: white;
-}
-
-.cta-box .btn-outline:hover {
-    border-color: white;
-}
-
-
-/* =========================================================
-   17. WHY / PROCESS SECTION
+   WHY
    ========================================================= */
 
 .why-section {
@@ -1096,7 +557,7 @@ p {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4,minmax(0,1fr));
     gap: 20px;
 }
 
@@ -1105,8 +566,8 @@ p {
     border: 1px solid var(--border);
     border-radius: 14px;
     background: white;
-    box-shadow: var(--shadow-sm);
-    transition: 0.25s ease;
+    box-shadow: 0 4px 15px rgba(11,31,51,.05);
+    transition: .25s ease;
 }
 
 .benefit-card:hover {
@@ -1124,6 +585,7 @@ p {
     border-radius: 50%;
     background: var(--navy);
     color: white;
+    font-size: .75rem;
     font-weight: 800;
 }
 
@@ -1132,12 +594,128 @@ p {
 }
 
 .benefit-card p {
-    font-size: 0.88rem;
+    font-size: .88rem;
 }
 
 
 /* =========================================================
-   18. FOOTER
+   CTA
+   ========================================================= */
+
+.inspection-cta {
+    padding: 75px 0;
+    background: var(--bg);
+}
+
+.cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 45px 50px;
+    border-radius: 18px;
+    background: linear-gradient(135deg,var(--navy-dark),var(--navy));
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-box h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: clamp(1.7rem,3vw,2.4rem);
+}
+
+.cta-box p {
+    max-width: 600px;
+    color: rgba(255,255,255,.7);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.cta-box .btn-outline {
+    border-color: rgba(255,255,255,.3);
+    background: transparent;
+    color: white;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-content h2 {
+    max-width: 650px;
+    margin-bottom: 20px;
+    font-size: clamp(2rem,3.5vw,3rem);
+}
+
+.about-content p {
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+
+.about-content .btn {
+    margin-top: 15px;
+}
+
+.about-highlight {
+    display: grid;
+    gap: 15px;
+}
+
+.about-highlight-item {
+    padding: 27px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--bg);
+}
+
+.about-highlight-item strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--navy);
+    font-size: 1.6rem;
+}
+
+.about-highlight-item span {
+    color: var(--muted);
+    font-size: .88rem;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-section {
+    padding: 90px 0;
+    background: var(--bg);
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   FOOTER
    ========================================================= */
 
 .site-footer {
@@ -1147,7 +725,7 @@ p {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.1fr 1.1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 45px;
     padding: 70px 0;
 }
@@ -1163,15 +741,18 @@ p {
     margin-bottom: 15px;
 }
 
-.footer-brand h3 {
-    margin-bottom: 10px;
+.footer-brand h3,
+.footer-links h4 {
     color: white;
 }
 
-.footer-brand p,
-.footer-links p {
-    color: rgba(255, 255, 255, 0.62);
-    font-size: 0.86rem;
+.footer-brand h3 {
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: rgba(255,255,255,.62);
+    font-size: .86rem;
 }
 
 .footer-links {
@@ -1182,15 +763,13 @@ p {
 }
 
 .footer-links h4 {
-    margin-bottom: 10px;
-    color: white;
-    font-size: 0.95rem;
+    margin-bottom: 8px;
+    font-size: .95rem;
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.86rem;
-    transition: 0.2s ease;
+    color: rgba(255,255,255,.65);
+    font-size: .86rem;
 }
 
 .footer-links a:hover {
@@ -1198,7 +777,7 @@ p {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    border-top: 1px solid rgba(255,255,255,.09);
 }
 
 .footer-bottom .container {
@@ -1206,13 +785,13 @@ p {
 }
 
 .footer-bottom p {
-    color: rgba(255, 255, 255, 0.48);
-    font-size: 0.78rem;
+    color: rgba(255,255,255,.48);
+    font-size: .78rem;
 }
 
 
 /* =========================================================
-   19. FLOATING WHATSAPP
+   FLOATING WHATSAPP
    ========================================================= */
 
 .whatsapp-float {
@@ -1228,12 +807,9 @@ p {
     border-radius: 50%;
     background: #20b85a;
     color: white;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
-    transition: 0.25s ease;
-}
-
-.whatsapp-float span {
     font-size: 1.45rem;
+    box-shadow: 0 10px 28px rgba(0,0,0,.22);
+    transition: .25s ease;
 }
 
 .whatsapp-float:hover {
@@ -1242,57 +818,37 @@ p {
 
 
 /* =========================================================
-   20. RESPONSIVE TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
 
-    .main-nav {
-        gap: 2px;
-    }
-
     .main-nav a {
         padding-left: 9px;
         padding-right: 9px;
-        font-size: 0.86rem;
-    }
-
-    .main-nav .nav-whatsapp {
-        margin-left: 3px;
+        font-size: .86rem;
     }
 
     .property-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .contact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .inspection-layout,
-    .contact-form-layout {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .inspection-info,
-    .contact-info-panel {
-        max-width: 850px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .benefits-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
+    .about-grid {
+        gap: 40px;
+    }
 }
 
 
 /* =========================================================
-   21. MOBILE NAVIGATION
+   MOBILE
    ========================================================= */
 
 @media (max-width: 780px) {
@@ -1324,11 +880,10 @@ p {
         display: none;
         flex-direction: column;
         align-items: stretch;
-        gap: 0;
         padding: 12px 5%;
         background: white;
         border-bottom: 1px solid var(--border);
-        box-shadow: 0 12px 25px rgba(11, 31, 51, 0.10);
+        box-shadow: 0 12px 25px rgba(11,31,51,.10);
     }
 
     .main-nav.show {
@@ -1340,10 +895,6 @@ p {
         border-bottom: 1px solid #eef1f4;
     }
 
-    .main-nav a:last-child {
-        border-bottom: none;
-    }
-
     .main-nav a.active::after {
         display: none;
     }
@@ -1353,28 +904,54 @@ p {
         text-align: center;
     }
 
-
-    .page-hero {
-        padding: 75px 0 70px;
+    .hero-section {
+        min-height: calc(100vh - 72px);
     }
 
-    .page-hero h1 {
-        font-size: 2.35rem;
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(7,22,36,.90),
+                rgba(7,22,36,.62)
+            );
     }
 
-    .page-hero p {
-        font-size: 0.96rem;
+    .hero-content {
+        padding: 35px 0 65px;
     }
 
-
-    .properties-intro {
-        padding-top: 65px;
+    .hero-content h1 {
+        max-width: 600px;
+        font-size: clamp(2.45rem,10vw,3.6rem);
     }
 
-    .all-properties-section {
-        padding-top: 35px;
+    .hero-content p {
+        max-width: 560px;
+        font-size: .96rem;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 330px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .intro-section,
+    .properties-section,
+    .why-section,
+    .about-section,
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
 
     .property-grid {
         grid-template-columns: 1fr;
@@ -1393,32 +970,9 @@ p {
         min-height: auto;
     }
 
-
-    .contact-grid {
+    .benefits-grid {
         grid-template-columns: 1fr;
     }
-
-
-    .contact-form-section,
-    .inspection-main-section,
-    .contact-main-section,
-    .why-section {
-        padding: 70px 0;
-    }
-
-
-    .inspection-form-card,
-    .contact-form-card {
-        padding: 27px 22px;
-        border-radius: 15px;
-    }
-
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
 
     .cta-box {
         flex-direction: column;
@@ -1435,62 +989,31 @@ p {
         width: 100%;
     }
 
-
-    .benefits-grid {
+    .about-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
+    .contact-actions {
+        flex-direction: column;
+        max-width: 330px;
+        margin: auto;
+    }
+
+    .contact-actions .btn {
+        width: 100%;
+    }
 
     .footer-grid {
         grid-template-columns: 1fr 1fr;
         gap: 35px 25px;
         padding: 55px 0;
     }
-   /* Home hero */
-
-    .hero-section {
-        min-height: calc(100vh - 72px);
-    }
-
-    .hero-overlay {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(7, 22, 36, 0.88),
-                rgba(7, 22, 36, 0.62)
-            );
-    }
-
-    .hero-content {
-        padding-top: 30px;
-        padding-bottom: 65px;
-    }
-
-    .hero-content h1 {
-        max-width: 600px;
-        font-size: clamp(2.45rem, 10vw, 3.6rem);
-        line-height: 1.06;
-    }
-
-    .hero-content p {
-        max-width: 560px;
-        font-size: 0.96rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-        max-width: 330px;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-    }
 }
 
 
 /* =========================================================
-   22. SMALL PHONES
+   SMALL PHONES
    ========================================================= */
 
 @media (max-width: 500px) {
@@ -1499,11 +1022,7 @@ p {
         width: 91%;
     }
 
-    .page-hero h1 {
-        font-size: 2rem;
-    }
-
-   .hero-section {
+    .hero-section {
         min-height: calc(100svh - 72px);
     }
 
@@ -1512,32 +1031,14 @@ p {
     }
 
     .hero-content p {
-        font-size: 0.92rem;
+        font-size: .92rem;
         line-height: 1.65;
     }
 
     .hero-badge {
-        font-size: 0.62rem;
-        letter-spacing: 0.11em;
+        font-size: .62rem;
+        letter-spacing: .11em;
     }
-
-    .hero-buttons {
-        max-width: none;
-    }
-
-    .page-hero {
-        padding: 65px 0 60px;
-    }
-
-
-    .section-heading {
-        margin-bottom: 38px;
-    }
-
-    .section-heading h2 {
-        font-size: 1.75rem;
-    }
-
 
     .property-video {
         height: 225px;
@@ -1552,31 +1053,9 @@ p {
         width: 100%;
     }
 
-
-    .inspection-form-card,
-    .contact-form-card {
-        padding: 23px 17px;
-    }
-
-    .form-header h2 {
-        font-size: 1.55rem;
-    }
-
-
-    .inspection-feature {
-        padding: 17px 0;
-    }
-
-
-    .contact-card {
-        min-height: auto;
-    }
-
-
     .footer-grid {
         grid-template-columns: 1fr;
     }
-
 
     .whatsapp-float {
         width: 52px;
@@ -1584,26 +1063,22 @@ p {
         right: 16px;
         bottom: 16px;
     }
-
 }
 
 
 /* =========================================================
-   23. ACCESSIBILITY
+   ACCESSIBILITY
    ========================================================= */
 
 a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-    outline: 3px solid rgba(199, 154, 69, 0.35);
+button:focus-visible {
+    outline: 3px solid rgba(199,154,69,.35);
     outline-offset: 2px;
 }
 
 
 /* =========================================================
-   24. REDUCED MOTION
+   REDUCED MOTION
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1616,7 +1091,5 @@ textarea:focus-visible {
     *::before,
     *::after {
         transition: none !important;
-        animation: none !important;
     }
-
 }
