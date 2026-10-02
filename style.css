@@ -2297,3 +2297,293 @@ select:focus-visible,
         transition: none !important;
     }
 }
+
+/* =========================================================
+   PROPERTY DETAILS POPUP
+   ========================================================= */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.property-popup-trigger {
+    cursor: pointer;
+}
+
+.property-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.property-media video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.video-click-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.05)
+    );
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    transition: opacity 0.25s ease;
+}
+
+.property-card:hover .video-click-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.72),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.play-detail-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+    font-size: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================= MODAL ================= */
+
+.property-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.property-modal.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.property-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(5px);
+}
+
+.property-modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 980px);
+    max-height: 92vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+    transform: translateY(25px) scale(0.97);
+    transition: transform 0.25s ease;
+}
+
+.property-modal.active .property-modal-dialog {
+    transform: translateY(0) scale(1);
+}
+
+.property-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.property-modal-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.property-modal-video {
+    width: 100%;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.property-modal-video video {
+    display: block;
+    width: 100%;
+    max-height: 520px;
+    background: #000;
+}
+
+.property-modal-content {
+    padding: 30px;
+}
+
+.property-modal-type {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: #f2f4f7;
+    color: #555;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.property-modal-content h2 {
+    margin: 0 0 12px;
+    font-size: clamp(25px, 4vw, 38px);
+    line-height: 1.15;
+}
+
+.property-modal-price {
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.property-modal-location {
+    margin: 0 0 22px;
+    color: #666;
+    font-size: 15px;
+}
+
+.property-modal-details {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.property-modal-details p {
+    margin: 0 0 14px;
+}
+
+.property-modal-details ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.property-modal-details li {
+    margin-bottom: 7px;
+}
+
+.property-modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.property-modal-actions .btn {
+    min-width: 180px;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    border-radius: 8px;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #1fbd5b;
+    transform: translateY(-2px);
+}
+
+
+/* ================= MOBILE POPUP ================= */
+
+@media (max-width: 700px) {
+
+    .property-modal {
+        padding: 10px;
+        align-items: flex-end;
+    }
+
+    .property-modal-dialog {
+        width: 100%;
+        max-height: 94vh;
+        border-radius: 18px;
+    }
+
+    .property-modal-video {
+        border-radius: 18px 18px 0 0;
+    }
+
+    .property-modal-video video {
+        max-height: 300px;
+    }
+
+    .property-modal-content {
+        padding: 22px 18px 25px;
+    }
+
+    .property-modal-content h2 {
+        font-size: 25px;
+    }
+
+    .property-modal-price {
+        font-size: 22px;
+    }
+
+    .property-modal-actions {
+        flex-direction: column;
+    }
+
+    .property-modal-actions .btn,
+    .property-modal-actions .btn-whatsapp {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .property-modal-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 27px;
+    }
+
+}
