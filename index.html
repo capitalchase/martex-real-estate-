@@ -7,7 +7,7 @@
     <title>Martex Real Estate | Premium Properties in Asaba</title>
 
     <meta name="description"
-          content="Martex Real Estate offers premium properties, land, residential homes and commercial investment opportunities in Asaba and surrounding areas.">
+          content="Martex Real Estate offers premium properties, land and investment opportunities in Asaba and surrounding areas.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,9 @@
 <body>
 
 <!-- ================= HEADER ================= -->
+
 <header class="site-header">
+
     <div class="container header-container">
 
         <a href="index.html" class="logo">
@@ -23,79 +25,92 @@
             <span class="logo-sub">REAL ESTATE</span>
         </a>
 
-        <button class="menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false">
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
             <span></span>
             <span></span>
             <span></span>
+
         </button>
 
         <nav class="main-nav">
-            <a href="index.html">Home</a>
+
+            <a href="index.html" class="active">Home</a>
+
             <a href="properties.html">Properties</a>
+
             <a href="inspection.html">Book Inspection</a>
+
             <a href="contact.html">Contact</a>
-            <a href="https://wa.me/2347039236599"
-               target="_blank"
-               rel="noopener">
+
+            <a
+                href="https://wa.me/2347039236599"
+                target="_blank"
+                rel="noopener"
+                class="nav-whatsapp">
                 WhatsApp
             </a>
+
         </nav>
 
     </div>
+
 </header>
 
 
 <!-- ================= HERO ================= -->
+
 <section class="hero">
 
     <div class="hero-video-wrap">
 
-        <video class="hero-video"
-               autoplay
-               muted
-               loop
-               playsinline
-               poster="images/hero.jpg">
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="images/hero.jpg">
 
             <source
                 src="videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4"
                 type="video/mp4">
 
-            Your browser does not support HTML5 video.
         </video>
 
         <div class="hero-overlay"></div>
 
     </div>
 
-    <div class="container hero-content">
+    <div class="hero-content">
 
-        <p class="hero-eyebrow">
+        <span class="hero-eyebrow">
             PREMIUM REAL ESTATE
-        </p>
+        </span>
 
         <h1>
-            Find the Right Property.<br>
-            Make the Right Investment.
+            Find the Right Property<br>
+            for Your Future
         </h1>
 
         <p>
-            Discover carefully selected residential,
-            commercial and land opportunities in
-            Asaba and surrounding areas.
+            Discover premium homes, land and investment opportunities
+            in Asaba and surrounding areas.
         </p>
 
         <div class="hero-actions">
 
             <a href="properties.html" class="btn btn-primary">
-                View Properties
+                Explore Properties
             </a>
 
-            <a href="inspection.html" class="btn btn-secondary">
-                Book an Inspection
+            <a href="inspection.html" class="btn btn-outline">
+                Book Inspection
             </a>
 
         </div>
@@ -106,23 +121,23 @@
 
 
 <!-- ================= PROPERTIES ================= -->
-<section class="properties-section">
+
+<section class="properties-section" id="properties">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <p class="section-eyebrow">
-                FEATURED PROPERTIES
-            </p>
+            <span class="section-eyebrow">
+                OUR PROPERTIES
+            </span>
 
             <h2>
                 Explore Our Available Properties
             </h2>
 
             <p>
-                Explore selected properties available
-                for purchase and investment.
+                Click any property video to view the full property details.
             </p>
 
         </div>
@@ -132,19 +147,28 @@
 
 
             <!-- PROPERTY 1 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="1">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video
+                        playsinline
+                        preload="metadata"
+                        poster="images/hero.jpg">
 
                         <source
                             src="videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -168,10 +192,9 @@
                             ₦250,000,000
                         </strong>
 
-                        <a href="inspection.html?property=Standard%204%20Bedroom%20Duplex"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -181,19 +204,25 @@
 
 
             <!-- PROPERTY 2 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="2">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/2fe50783-5a32-494f-a589-d8ec00e73803.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -217,10 +246,9 @@
                             ₦30,000,000
                         </strong>
 
-                        <a href="inspection.html?property=50%20%C3%97%20100%20Plot%20at%20Ogbeozoma"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -230,19 +258,25 @@
 
 
             <!-- PROPERTY 3 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="3">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/36e095e9-6b17-48f2-903c-01e6a609272d.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -266,10 +300,9 @@
                             ₦15,000,000
                         </strong>
 
-                        <a href="inspection.html?property=50%20%C3%97%20100%20Plot%20at%20Ogbeobi"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -279,19 +312,25 @@
 
 
             <!-- PROPERTY 4 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="4">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/19f5de24-ee07-4d5d-b165-5d4977b88d10.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -315,10 +354,9 @@
                             ₦12,000,000
                         </strong>
 
-                        <a href="inspection.html?property=50%20%C3%97%20100%20Plot%20on%20Major%20Road"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -328,19 +366,25 @@
 
 
             <!-- PROPERTY 5 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="5">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/edc396a6-b1be-4311-8ad6-0580419b0c55.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -364,10 +408,9 @@
                             ₦230,000,000
                         </strong>
 
-                        <a href="inspection.html?property=5%20Bedroom%20Duplex%20%2B%203%20Bedroom%20BQ"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -377,19 +420,25 @@
 
 
             <!-- PROPERTY 6 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="6">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/c9f3dc22-ebae-4fb6-bf9a-a4d7fa1f5497.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -413,10 +462,9 @@
                             ₦300,000,000
                         </strong>
 
-                        <a href="inspection.html?property=85%20%C3%97%20100%20Land%20Behind%20Toscana"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -426,19 +474,25 @@
 
 
             <!-- PROPERTY 7 -->
-            <article class="property-card">
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="7">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/f1d9eb16-32b4-457a-b9a3-bfdbc5372603.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -462,10 +516,9 @@
                             ₦600,000,000
                         </strong>
 
-                        <a href="inspection.html?property=100%20%C3%97%20300%20Major%20Road%20Property"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -474,20 +527,26 @@
             </article>
 
 
-            <!-- ================= NEW PROPERTY 8 ================= -->
-            <article class="property-card">
+            <!-- PROPERTY 8 -->
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="8">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/19cfa11f-5ef5-4e1f-9eb2-996d17d24288.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -498,16 +557,11 @@
                     </span>
 
                     <h3>
-                        100 × 200 Property with Old Filling Station
+                        100 × 200 Property + Old Filling Station
                     </h3>
 
                     <p class="property-location">
                         📍 Okpanam Major Road, after Midwifery Market
-                    </p>
-
-                    <p>
-                        100 × 200 land with an existing old
-                        filling station.
                     </p>
 
                     <div class="property-bottom">
@@ -516,10 +570,9 @@
                             ₦900,000,000
                         </strong>
 
-                        <a href="inspection.html?property=100%20%C3%97%20200%20Property%20with%20Old%20Filling%20Station"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -528,14 +581,15 @@
             </article>
 
 
-            <!-- ================= NEW PROPERTY 9 ================= -->
-            <article class="property-card">
+            <!-- PROPERTY 9 -->
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="9">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/96dffd6c-0462-488a-a1a9-ca3c835c2bed.mp4"
@@ -543,30 +597,25 @@
 
                     </video>
 
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
+
                 </div>
 
                 <div class="property-content">
 
                     <span class="property-type">
-                        COMMERCIAL
+                        FILLING STATION
                     </span>
 
                     <h3>
-                        Filling Station for Sale
+                        Filling Station — Asaba-Benin Expressway
                     </h3>
 
                     <p class="property-location">
                         📍 Asaba-Benin Expressway
-                    </p>
-
-                    <p>
-                        More than 1 acre of land with
-                        8 pumps. The filling station is
-                        currently not functional.
-                    </p>
-
-                    <p>
-                        All documents are intact.
                     </p>
 
                     <div class="property-bottom">
@@ -575,10 +624,9 @@
                             ₦550,000,000
                         </strong>
 
-                        <a href="inspection.html?property=Filling%20Station%20Asaba-Benin%20Expressway"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -587,14 +635,15 @@
             </article>
 
 
-            <!-- ================= NEW PROPERTY 10 ================= -->
-            <article class="property-card">
+            <!-- PROPERTY 10 -->
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="10">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/88e8da1b-b4a8-4e37-a003-c940d0f9dbae.mp4"
@@ -602,16 +651,21 @@
 
                     </video>
 
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
+
                 </div>
 
                 <div class="property-content">
 
                     <span class="property-type">
-                        COMMERCIAL
+                        FILLING STATION
                     </span>
 
                     <h3>
-                        Filling Station for Sale
+                        Filling Station — Bypass Major Road
                     </h3>
 
                     <p class="property-location">
@@ -624,10 +678,9 @@
                             ₦550,000,000
                         </strong>
 
-                        <a href="inspection.html?property=Filling%20Station%20Bypass%20Major%20Road"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
@@ -636,20 +689,26 @@
             </article>
 
 
-            <!-- ================= NEW PROPERTY 11 ================= -->
-            <article class="property-card">
+            <!-- PROPERTY 11 -->
+
+            <article
+                class="property-card property-popup-trigger"
+                data-property="11">
 
                 <div class="property-media">
 
-                    <video controls
-                           playsinline
-                           preload="metadata">
+                    <video playsinline preload="metadata">
 
                         <source
                             src="videos/81680efb-c79c-4e5f-9496-07b3a2837c62.mp4"
                             type="video/mp4">
 
                     </video>
+
+                    <div class="video-click-overlay">
+                        <span class="play-detail-icon">▶️</span>
+                        <span>View Property Details</span>
+                    </div>
 
                 </div>
 
@@ -660,21 +719,11 @@
                     </span>
 
                     <h3>
-                        6 Units 2-Bedroom & 2 Units 3-Bedroom
+                        8-Unit Residential Property
                     </h3>
 
                     <p class="property-location">
                         📍 Location available on request
-                    </p>
-
-                    <p>
-                        A residential property consisting
-                        of 6 units of 2-bedroom apartments
-                        and 2 units of 3-bedroom apartments.
-                    </p>
-
-                    <p>
-                        By My Dream Studio.
                     </p>
 
                     <div class="property-bottom">
@@ -683,26 +732,15 @@
                             ₦400,000,000
                         </strong>
 
-                        <a href="inspection.html?property=6%20Units%202-Bedroom%20%26%202%20Units%203-Bedroom"
-                           class="property-link">
-                            View Property →
-                        </a>
+                        <span class="property-link">
+                            View Details →
+                        </span>
 
                     </div>
 
                 </div>
 
             </article>
-
-
-        </div>
-
-
-        <div class="section-action">
-
-            <a href="properties.html" class="btn btn-primary">
-                View All Properties
-            </a>
 
         </div>
 
@@ -712,44 +750,36 @@
 
 
 <!-- ================= WHY MARTEX ================= -->
+
 <section class="why-section">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <p class="section-eyebrow">
+            <span class="section-eyebrow">
                 WHY MARTEX
-            </p>
+            </span>
 
             <h2>
-                A Better Way to Find Property
+                A Smarter Way to Buy Property
             </h2>
 
-            <p>
-                We make property discovery and inspection
-                straightforward, transparent and convenient.
-            </p>
-
         </div>
-
 
         <div class="why-grid">
 
             <div class="why-card">
 
-                <div class="why-icon">
-                    🏠
-                </div>
+                <div class="why-icon">🏠</div>
 
                 <h3>
-                    Carefully Selected Properties
+                    Verified Properties
                 </h3>
 
                 <p>
-                    We showcase residential, land and
-                    commercial opportunities selected
-                    for buyers and investors.
+                    Explore carefully presented property opportunities
+                    across Asaba and surrounding areas.
                 </p>
 
             </div>
@@ -757,55 +787,31 @@
 
             <div class="why-card">
 
-                <div class="why-icon">
-                    📍
-                </div>
+                <div class="why-icon">🤝</div>
+
+                <h3>
+                    Professional Guidance
+                </h3>
+
+                <p>
+                    We help buyers understand available properties and
+                    arrange convenient inspections.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">📍</div>
 
                 <h3>
                     Strategic Locations
                 </h3>
 
                 <p>
-                    Discover properties in strategic
-                    areas across Asaba and surrounding
-                    locations.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    🤝
-                </div>
-
-                <h3>
-                    Professional Assistance
-                </h3>
-
-                <p>
-                    From property enquiries to inspections,
-                    our team is available to assist you
-                    through the process.
-                </p>
-
-            </div>
-
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    🔑
-                </div>
-
-                <h3>
-                    Easy Property Inspection
-                </h3>
-
-                <p>
-                    Book an inspection and get the opportunity
-                    to see your preferred property in person.
+                    Discover residential, commercial and land opportunities
+                    in growing areas.
                 </p>
 
             </div>
@@ -818,30 +824,32 @@
 
 
 <!-- ================= ABOUT ================= -->
+
 <section class="about-section">
 
     <div class="container about-container">
 
         <div class="about-content">
 
-            <p class="section-eyebrow">
+            <span class="section-eyebrow">
                 ABOUT MARTEX
-            </p>
+            </span>
 
             <h2>
-                Helping You Find Your Next Property
+                Property Opportunities Built Around Your Goals
             </h2>
 
             <p>
-                Martex Real Estate is focused on connecting
-                buyers and investors with property opportunities
-                across Asaba and surrounding areas.
+                Martex Real Estate connects buyers with residential,
+                commercial and land opportunities in Asaba and surrounding
+                locations.
             </p>
 
             <p>
-                Whether you are looking for a home, land,
-                commercial property or an investment opportunity,
-                we are here to help you discover the right option.
+                Whether you are searching for a home, land for development
+                or a strategic investment, our property listings make it
+                easier to discover available opportunities and arrange
+                inspections.
             </p>
 
             <a href="contact.html" class="btn btn-primary">
@@ -856,40 +864,42 @@
 
 
 <!-- ================= CTA ================= -->
+
 <section class="cta-section">
 
     <div class="container cta-container">
 
         <div>
 
-            <p class="section-eyebrow">
-                READY TO SEE A PROPERTY?
-            </p>
+            <span class="section-eyebrow">
+                READY TO INSPECT?
+            </span>
 
             <h2>
-                Book Your Property Inspection Today
+                Found a Property You Like?
             </h2>
 
             <p>
-                Schedule an inspection and take the next
-                step toward your property investment.
+                Book an inspection and take the next step toward your
+                property investment.
             </p>
 
         </div>
 
-
         <div class="cta-actions">
 
-            <a href="inspection.html"
-               class="btn btn-primary">
+            <a href="inspection.html" class="btn btn-primary">
                 Book Inspection
             </a>
 
-            <a href="https://wa.me/2347039236599"
-               target="_blank"
-               rel="noopener"
-               class="btn btn-secondary">
-                Chat on WhatsApp
+            <a
+                href="https://wa.me/2347039236599"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline">
+
+                WhatsApp Us
+
             </a>
 
         </div>
@@ -900,21 +910,21 @@
 
 
 <!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
 
     <div class="container footer-container">
 
         <div class="footer-about">
 
-            <a href="index.html" class="footer-logo">
-                <span class="logo-main">MARTEX</span>
-                <span class="logo-sub">REAL ESTATE</span>
-            </a>
+            <div class="footer-logo">
+                MARTEX
+                <span>REAL ESTATE</span>
+            </div>
 
             <p>
-                Connecting you with quality properties
-                and investment opportunities in Asaba
-                and surrounding areas.
+                Premium real estate opportunities in Asaba and
+                surrounding areas.
             </p>
 
         </div>
@@ -926,21 +936,13 @@
                 Quick Links
             </h3>
 
-            <a href="index.html">
-                Home
-            </a>
+            <a href="index.html">Home</a>
 
-            <a href="properties.html">
-                Properties
-            </a>
+            <a href="properties.html">Properties</a>
 
-            <a href="inspection.html">
-                Book Inspection
-            </a>
+            <a href="inspection.html">Book Inspection</a>
 
-            <a href="contact.html">
-                Contact
-            </a>
+            <a href="contact.html">Contact</a>
 
         </div>
 
@@ -952,23 +954,21 @@
             </h3>
 
             <p>
-                📍 Stop 6 Christ Is King Plaza,
+                Stop 6 Christ Is King Plaza,
                 Black Gate Junction,
                 Okpanam Road
             </p>
 
-            <p>
-                📧 Patmatchuka10@gmail.com
-            </p>
-
-            <p>
-                📱 +234 703 923 6599
-            </p>
+            <a href="mailto:Patmatchuka10@gmail.com">
+                Patmatchuka10@gmail.com
+            </a>
 
             <a href="https://wa.me/2347039236599"
                target="_blank"
                rel="noopener">
-                Chat on WhatsApp
+
+                +234 703 923 6599
+
             </a>
 
         </div>
@@ -980,10 +980,8 @@
 
         <div class="container">
 
-            <p>
-                ©️ <span id="currentYear"></span>
-                Martex Real Estate. All Rights Reserved.
-            </p>
+            ©️ <span class="current-year"></span>
+            Martex Real Estate. All Rights Reserved.
 
         </div>
 
@@ -993,31 +991,132 @@
 
 
 <!-- ================= FLOATING WHATSAPP ================= -->
-<a href="https://wa.me/2347039236599"
-   class="floating-whatsapp"
-   target="_blank"
-   rel="noopener"
-   aria-label="Chat with Martex Real Estate on WhatsApp">
+
+<a
+    href="https://wa.me/2347039236599"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Martex Real Estate on WhatsApp">
 
     WhatsApp
 
 </a>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- ================= PROPERTY POPUP ================= -->
+
+<div
+    class="property-modal"
+    id="propertyModal"
+    aria-hidden="true">
+
+    <div class="property-modal-backdrop"></div>
+
+    <div
+        class="property-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalPropertyTitle">
+
+        <button
+            type="button"
+            class="property-modal-close"
+            id="closePropertyModal"
+            aria-label="Close property details">
+
+            ×
+
+        </button>
+
+
+        <div class="property-modal-video">
+
+            <video
+                id="modalPropertyVideo"
+                controls
+                playsinline
+                preload="metadata">
+
+                <source id="modalVideoSource" src="" type="video/mp4">
+
+            </video>
+
+        </div>
+
+
+        <div class="property-modal-content">
+
+            <span
+                class="property-modal-type"
+                id="modalPropertyType">
+            </span>
+
+            <h2 id="modalPropertyTitle"></h2>
+
+            <div
+                class="property-modal-price"
+                id="modalPropertyPrice">
+            </div>
+
+            <p
+                class="property-modal-location"
+                id="modalPropertyLocation">
+            </p>
+
+            <div
+                class="property-modal-details"
+                id="modalPropertyDetails">
+            </div>
+
+
+            <div class="property-modal-actions">
+
+                <a
+                    href="inspection.html"
+                    id="modalInspectionButton"
+                    class="btn btn-primary">
+
+                    Book Inspection
+
+                </a>
+
+                <a
+                    href="https://wa.me/2347039236599"
+                    id="modalWhatsappButton"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-whatsapp">
+
+                    WhatsApp Enquiry
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
 <script>
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* Current year */
-    const yearElement = document.getElementById("currentYear");
+    /* ================= YEAR ================= */
 
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
+    document.querySelectorAll(".current-year").forEach(function (element) {
+        element.textContent = new Date().getFullYear();
+    });
 
 
-    /* Mobile menu */
+    /* ================= MOBILE MENU ================= */
+
     const menuToggle = document.querySelector(".menu-toggle");
     const mainNav = document.querySelector(".main-nav");
 
@@ -1027,6 +1126,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const isOpen = mainNav.classList.toggle("open");
 
+            mainNav.classList.toggle("show", isOpen);
+
             menuToggle.setAttribute(
                 "aria-expanded",
                 isOpen ? "true" : "false"
@@ -1035,12 +1136,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-        /* Close menu after clicking a navigation link */
         mainNav.querySelectorAll("a").forEach(function (link) {
 
             link.addEventListener("click", function () {
 
                 mainNav.classList.remove("open");
+                mainNav.classList.remove("show");
 
                 menuToggle.setAttribute(
                     "aria-expanded",
@@ -1054,41 +1155,415 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* Property video audio */
-    const propertyVideos =
-        document.querySelectorAll(".property-media video");
+    /* ================= PROPERTY DATA ================= */
 
-    propertyVideos.forEach(function (video) {
+    const properties = {
 
-        /* Make sure property videos are NOT muted */
-        video.muted = false;
+        1: {
+            type: "RESIDENTIAL",
+            title: "Standard 4 Bedroom Duplex",
+            price: "₦250,000,000",
+            location: "📍 Asaba, Delta State",
+            video: "videos/9277ff0c-9338-426d-9b4c-d5c2a5b5edbe.mp4",
+            details: `
+                <p>
+                    A standard 4-bedroom duplex available in Asaba,
+                    Delta State.
+                </p>
 
-        video.removeAttribute("muted");
+                <ul>
+                    <li>4 bedrooms</li>
+                    <li>Residential property</li>
+                    <li>Suitable for family living</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        2: {
+            type: "LAND",
+            title: "50 × 100 Plot at Ogbeozoma",
+            price: "₦30,000,000",
+            location: "📍 Ogbeozoma, Okpanam",
+            video: "videos/2fe50783-5a32-494f-a589-d8ec00e73803.mp4",
+            details: `
+                <p>
+                    A 50 × 100 plot of land located at Ogbeozoma,
+                    Okpanam.
+                </p>
+
+                <ul>
+                    <li>Land size: 50 × 100</li>
+                    <li>Location: Ogbeozoma, Okpanam</li>
+                    <li>Suitable for residential development</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        3: {
+            type: "LAND",
+            title: "50 × 100 Plot at Ogbeobi",
+            price: "₦15,000,000",
+            location: "📍 Ogbeobi, Okpanam",
+            video: "videos/36e095e9-6b17-48f2-903c-01e6a609272d.mp4",
+            details: `
+                <p>
+                    A 50 × 100 plot of land at Ogbeobi, Okpanam.
+                </p>
+
+                <ul>
+                    <li>Land size: 50 × 100</li>
+                    <li>Location: Ogbeobi, Okpanam</li>
+                    <li>Development opportunity</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        4: {
+            type: "LAND",
+            title: "50 × 100 Plot on Major Road",
+            price: "₦12,000,000",
+            location: "📍 Ogbeobi, Okpanam via Obodogwugwu",
+            video: "videos/19f5de24-ee07-4d5d-b165-5d4977b88d10.mp4",
+            details: `
+                <p>
+                    A 50 × 100 plot located on a major road at
+                    Ogbeobi, Okpanam via Obodogwugwu.
+                </p>
+
+                <ul>
+                    <li>Land size: 50 × 100</li>
+                    <li>Major road location</li>
+                    <li>Suitable for development</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        5: {
+            type: "RESIDENTIAL",
+            title: "5 Bedroom Duplex + 3 Bedroom BQ",
+            price: "₦230,000,000",
+            location: "📍 Nwawolo Market Axis",
+            video: "videos/edc396a6-b1be-4311-8ad6-0580419b0c55.mp4",
+            details: `
+                <p>
+                    A spacious 5-bedroom duplex with a 3-bedroom
+                    boys' quarters at Nwawolo Market Axis.
+                </p>
+
+                <ul>
+                    <li>5-bedroom duplex</li>
+                    <li>3-bedroom BQ</li>
+                    <li>Location: Nwawolo Market Axis</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        6: {
+            type: "LAND",
+            title: "85 × 100 Land Behind Toscana",
+            price: "₦300,000,000",
+            location: "📍 DBS Road Area, Asaba",
+            video: "videos/c9f3dc22-ebae-4fb6-bf9a-a4d7fa1f5497.mp4",
+            details: `
+                <p>
+                    An 85 × 100 land opportunity located behind
+                    Toscana in the DBS Road area of Asaba.
+                </p>
+
+                <ul>
+                    <li>Land size: 85 × 100</li>
+                    <li>Location: DBS Road Area, Asaba</li>
+                    <li>Suitable for development</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        7: {
+            type: "DEVELOPMENT LAND",
+            title: "100 × 300 Major Road Property",
+            price: "₦600,000,000",
+            location: "📍 Jesus Save Area",
+            video: "videos/f1d9eb16-32b4-457a-b9a3-bfdbc5372603.mp4",
+            details: `
+                <p>
+                    A large 100 × 300 property situated along a
+                    major road at Jesus Save Area.
+                </p>
+
+                <ul>
+                    <li>Land size: 100 × 300</li>
+                    <li>Major road property</li>
+                    <li>Suitable for major development</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        8: {
+            type: "DISTRESS SALE",
+            title: "100 × 200 Property + Old Filling Station",
+            price: "₦900,000,000 Negotiable",
+            location: "📍 Okpanam Major Road, after Midwifery Market",
+            video: "videos/19cfa11f-5ef5-4e1f-9eb2-996d17d24288.mp4",
+            details: `
+                <p>
+                    Distress sale opportunity featuring a 100 × 200
+                    property with an old filling station.
+                </p>
+
+                <ul>
+                    <li>Land size: 100 × 200</li>
+                    <li>Old filling station on the property</li>
+                    <li>Location: Okpanam Major Road</li>
+                    <li>After Midwifery Market</li>
+                    <li>Price: ₦900M negotiable</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        9: {
+            type: "FILLING STATION",
+            title: "Filling Station — Asaba-Benin Expressway",
+            price: "₦550,000,000 Outright",
+            location: "📍 Asaba-Benin Expressway",
+            video: "videos/96dffd6c-0462-488a-a1a9-ca3c835c2bed.mp4",
+            details: `
+                <p>
+                    A filling station property located along the
+                    Asaba-Benin Expressway.
+                </p>
+
+                <ul>
+                    <li>Land size: More than 1 acre</li>
+                    <li>8 pumps</li>
+                    <li>Currently not functional</li>
+                    <li>Documents intact</li>
+                    <li>Outright sale</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        10: {
+            type: "FILLING STATION",
+            title: "Filling Station — Bypass Major Road",
+            price: "₦550,000,000",
+            location: "📍 Bypass Major Road",
+            video: "videos/88e8da1b-b4a8-4e37-a003-c940d0f9dbae.mp4",
+            details: `
+                <p>
+                    Filling station property available for sale
+                    along Bypass Major Road.
+                </p>
+
+                <ul>
+                    <li>Filling station property</li>
+                    <li>Major road location</li>
+                    <li>Price: ₦550M</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        },
+
+        11: {
+            type: "RESIDENTIAL",
+            title: "8-Unit Residential Property",
+            price: "₦400,000,000 Net",
+            location: "📍 Location available on request",
+            video: "videos/81680efb-c79c-4e5f-9496-07b3a2837c62.mp4",
+            details: `
+                <p>
+                    An 8-unit residential property consisting of
+                    six 2-bedroom units and two 3-bedroom units.
+                </p>
+
+                <ul>
+                    <li>6 units of 2-bedroom apartments</li>
+                    <li>2 units of 3-bedroom apartments</li>
+                    <li>8 residential units in total</li>
+                    <li>By My Dream Studio</li>
+                    <li>Price: ₦400M net</li>
+                    <li>Inspection available by appointment</li>
+                </ul>
+            `
+        }
+
+    };
 
 
-        /* Only one property video plays at a time */
-        video.addEventListener("play", function () {
+    /* ================= PROPERTY MODAL ================= */
 
-            propertyVideos.forEach(function (otherVideo) {
+    const modal = document.getElementById("propertyModal");
+    const modalVideo = document.getElementById("modalPropertyVideo");
+    const modalVideoSource = document.getElementById("modalVideoSource");
 
-                if (otherVideo !== video) {
-                    otherVideo.pause();
-                }
+    const modalType = document.getElementById("modalPropertyType");
+    const modalTitle = document.getElementById("modalPropertyTitle");
+    const modalPrice = document.getElementById("modalPropertyPrice");
+    const modalLocation = document.getElementById("modalPropertyLocation");
+    const modalDetails = document.getElementById("modalPropertyDetails");
+
+    const closeModalButton =
+        document.getElementById("closePropertyModal");
+
+    const modalInspectionButton =
+        document.getElementById("modalInspectionButton");
+
+    const modalWhatsappButton =
+        document.getElementById("modalWhatsappButton");
+
+
+    function openPropertyModal(propertyNumber) {
+
+        const property = properties[propertyNumber];
+
+        if (!property) {
+            return;
+        }
+
+
+        modalType.textContent = property.type;
+
+        modalTitle.textContent = property.title;
+
+        modalPrice.textContent = property.price;
+
+        modalLocation.textContent = property.location;
+
+        modalDetails.innerHTML = property.details;
+
+
+        modalVideo.pause();
+
+        modalVideoSource.src = property.video;
+
+        modalVideo.load();
+
+
+        modalInspectionButton.href =
+            "inspection.html?property=" +
+            encodeURIComponent(property.title);
+
+
+        const whatsappMessage =
+            "Hello Martex Real Estate, I am interested in: " +
+            property.title +
+            " - " +
+            property.price;
+
+        modalWhatsappButton.href =
+            "https://wa.me/2347039236599?text=" +
+            encodeURIComponent(whatsappMessage);
+
+
+        modal.classList.add("active");
+
+        modal.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("modal-open");
+
+
+        setTimeout(function () {
+
+            modalVideo.play().catch(function () {
+                /* Mobile browsers may require a user tap */
+            });
+
+        }, 250);
+
+    }
+
+
+    function closePropertyModal() {
+
+        modalVideo.pause();
+
+        modalVideo.removeAttribute("src");
+
+        modalVideoSource.removeAttribute("src");
+
+        modalVideo.load();
+
+        modal.classList.remove("active");
+
+        modal.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("modal-open");
+
+    }
+
+
+    /* ================= PROPERTY CLICK ================= */
+
+    document.querySelectorAll(".property-popup-trigger")
+        .forEach(function (card) {
+
+            card.addEventListener("click", function () {
+
+                const propertyNumber =
+                    card.getAttribute("data-property");
+
+                openPropertyModal(propertyNumber);
 
             });
 
         });
 
+
+    /* ================= CLOSE BUTTON ================= */
+
+    closeModalButton.addEventListener(
+        "click",
+        closePropertyModal
+    );
+
+
+    /* ================= BACKDROP ================= */
+
+    const modalBackdrop =
+        document.querySelector(".property-modal-backdrop");
+
+    if (modalBackdrop) {
+
+        modalBackdrop.addEventListener(
+            "click",
+            closePropertyModal
+        );
+
+    }
+
+
+    /* ================= ESCAPE KEY ================= */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (
+            event.key === "Escape" &&
+            modal.classList.contains("active")
+        ) {
+
+            closePropertyModal();
+
+        }
+
     });
 
 
-    /* Hero video stays muted for autoplay */
-    const heroVideo =
-        document.querySelector(".hero-video");
+    /* ================= STOP CARD VIDEO ================= */
 
-    if (heroVideo) {
-        heroVideo.muted = true;
-    }
+    document.querySelectorAll(".property-card video")
+        .forEach(function (video) {
+
+            video.muted = true;
+
+        });
 
 });
 
